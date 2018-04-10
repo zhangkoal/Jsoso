@@ -9,8 +9,13 @@ import javax.servlet.http.HttpServletRequest;
 @Controller
 public class UserController {
 
-    @RequestMapping(value = "index", method = RequestMethod.GET)
+    @RequestMapping(value = "",method = RequestMethod.GET)
     public String login(HttpServletRequest request) {
         return "login";
+    }
+
+    @RequestMapping(value = "register",method = RequestMethod.GET)
+    public String register(HttpServletRequest request) {
+        return "register";
     }
 }
