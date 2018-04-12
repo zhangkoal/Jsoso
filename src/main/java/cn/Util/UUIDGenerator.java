@@ -58,13 +58,11 @@ public final class UUIDGenerator {
             incrementingValue = 0;
             i = 0;
         }
-        return baseUUID + System.currentTimeMillis() + i;
+        getInitialUUID();
+        return  baseUUID + System.currentTimeMillis() + i;
     }
 
     protected static synchronized void getInitialUUID() {
-        if (baseUUID != null) {
-            return;
-        }
         if (myRand == null) {
             myRand = new Random();
         }
