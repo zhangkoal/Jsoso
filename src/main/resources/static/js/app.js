@@ -65,14 +65,14 @@ function getEamilCode(){
             jQuery("#emailCode").val(countDownTime+"秒后重新获取");
             countDown(countDownTime - 1);
         }
-        var userMail = jQuery("#email").val();
+        var userName = jQuery("#email").val();
         alert("发送成功！");
         //向后台发送处理数据
         $.ajax({
             type: "post", //用Post方式传输
             dataType: "json", //数据格式:JSON
             url: '/sendMail', //目标地址
-            data: {toUser : userMail},
+            data: {userName : userName},
             success: function (data) {
             }
         });
