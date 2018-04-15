@@ -13,14 +13,25 @@ public class SessionUtil {
 
     @Autowired
     private CacheDataFactory cacheDataFactory;
+
+
+    /**
+     * 获取用户的邮箱验证码
+     * @param userName
+     * @return
+     */
+    public Object getuserRegistSeesionValue(String userName){
+        String key = RedisType.userRegistSession + userName;
+       return cacheDataFactory.getCacheDataByKey(key);
+    }
     /**
      * 用户注册session添加
      */
-    public void insertUserRegistSession(String userName) throws Exception {
+    public void insertUserRegistSession(String userName, String emailCode) throws Exception {
         String key = RedisType.userRegistSession + userName;
         //半小时内生效
         int seconds = 60 * 30;
-        cacheDataFactory.updateCacheData(key, "用户注册", seconds);
+        cacheDataFactory.updateCacheData(key, emailCode, seconds);
     }
 
     /**

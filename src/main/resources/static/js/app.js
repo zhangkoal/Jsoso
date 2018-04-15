@@ -49,9 +49,20 @@ $(function () {
     });
 });
 $('#submitBtn').click(function () {
-    $('#formCheckId').booformCheckIdtstrapValidator('validate')
+    $('#formCheckId').bootstrapValidator('validate')
     if($('#formCheckId').data('bootstrapValidator').isValid()) {
-        alert('验证成功！');
+        var userName = jQuery("#email").val();
+        var password = jQuery("#password").val();
+        var emailCode = jQuery("#emailCodeInput").val();
+        $.ajax({
+            type: "post", //用Post方式传输
+            dataType: "json", //数据格式:JSON
+            url: '/userRegist', //目标地址
+            data: {userName : userName, password:password, emailCode:emailCode},
+            success: function (data) {
+                alert(data.msg);
+            }
+        });
     } else {
         alert('验证失败！');
     }

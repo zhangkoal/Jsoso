@@ -28,13 +28,8 @@ public class MailController {
     private String webName;
 
     @Autowired
-    private CacheDataFactory cacheDataFactory;
-
-    @Autowired
     private SessionUtil sessionUtil;
 
-    @Autowired
-    private JedisCfg jedisCfg;
 
     @RequestMapping("sendMail")
     @ResponseBody
@@ -47,7 +42,7 @@ public class MailController {
                 "<br><br>"+ webName + "团队";
         String title = webName + "校验码";
        // mailService.sendSimple(toUser, title, codeMsg);
-        sessionUtil.insertUserRegistSession(userName);
+        sessionUtil.insertUserRegistSession(userName, code);
         Msg msg = new Msg();
         msg.setCode(100);
         msg.setMsg("验证码发送成功！");
