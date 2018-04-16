@@ -41,7 +41,7 @@ public class MailController {
         String codeMsg = "尊敬的用户：您的校验码： <h1 style='color:red'>" + code + "</h1>工作人员不会索取，请勿泄漏。<br><br><br><br><br><br><br>" +
                 "<br><br>"+ webName + "团队";
         String title = webName + "校验码";
-       // mailService.sendSimple(toUser, title, codeMsg);
+        mailService.sendSimple(userName, title, codeMsg);
         sessionUtil.insertUserRegistSession(userName, code);
         Msg msg = new Msg();
         msg.setCode(100);

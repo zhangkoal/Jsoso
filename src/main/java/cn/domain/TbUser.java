@@ -18,10 +18,6 @@ public class TbUser {
     @Column(name = "userType", nullable = true)
     public int userType;
 
-    @Column(name = "email", nullable = true, length = 32)
-    public String email;
-
-
     public int getUserId() {
         return userId;
     }
@@ -52,13 +48,5 @@ public class TbUser {
 
     public void setUserType(int userType) {
         this.userType = userType;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
     }
 }

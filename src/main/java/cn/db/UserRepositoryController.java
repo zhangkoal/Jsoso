@@ -21,8 +21,7 @@ public class UserRepositoryController {
     @PostMapping(value = "/addUser")
     public TbUser addUser(@RequestParam("userName") String userName, @RequestParam("password") String password){
         TbUser user = new TbUser();
-
-        user.setEmail(userName);
+        user.setUesrName(userName);
         user.setPassword(password);
 
         return userRepository.save( user);
