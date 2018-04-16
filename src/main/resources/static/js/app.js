@@ -47,7 +47,62 @@ $(function () {
             }
         }
     });
+    $('#loginForm').bootstrapValidator({
+        live: 'disabled',//验证时机，enabled是内容有变化就验证（默认），disabled和submitted是提交再验证
+        message: 'This value is not valid',
+        feedbackIcons: {
+            valid: 'glyphicon glyphicon-ok',
+            invalid: 'glyphicon glyphicon-remove',
+            validating: 'glyphicon glyphicon-refresh'
+        },
+        fields: {
+            email: {
+                validators: {
+                    notEmpty: {
+                        message: '邮箱地址不能为空'
+                    },
+                    emailAddress: {
+                        message: '邮箱地址格式有误'
+                    },
+                }
+            },
+            password:{
+                validators: {
+                    notEmpty: {
+                        message: '文本框必须输入'
+                    },
+                    notEmpty: {//检测非空,radio也可用
+                        message: '文本框必须输入'
+                    },
+                    stringLength: {//检测长度
+                        min: 6,
+                        max: 30,
+                        message: '长度必须在6-30之间'
+                    }
+                }
+            },
+        }
+    });
 });
+$('#userLogin').click(function () {
+    $('#loginForm').bootstrapValidator('validate')
+    if($('#loginForm').data('bootstrapValidator').isValid()) {
+        var userName = jQuery("#email").val();
+        var password = jQuery("#password").val();
+        $.ajax({
+            type: "post", //用Post方式传输
+            dataType: "json", //数据格式:JSON
+            url: 'userlogin', //目标地址
+            data: {userName:userName, password:password},
+            success: function (data) {
+                alert(data.msg);
+                alert(date.url);
+                alert(data.data);
+            }
+        });
+    }
+});
+
 $('#submitBtn').click(function () {
     $('#formCheckId').bootstrapValidator('validate')
     if($('#formCheckId').data('bootstrapValidator').isValid()) {
@@ -63,8 +118,6 @@ $('#submitBtn').click(function () {
                 alert(data.msg);
             }
         });
-    } else {
-        alert('验证失败！');
     }
 });
 function getEamilCode(){

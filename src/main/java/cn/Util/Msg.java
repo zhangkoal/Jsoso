@@ -3,7 +3,17 @@ package cn.Util;
 public class Msg<T> {
     private Integer code;
     private String msg;
+    private String url;
     private T data;
+
+
+    public String getUrl() {
+        return url;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
+    }
 
     public Integer getCode() {
         return code;

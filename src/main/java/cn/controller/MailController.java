@@ -38,7 +38,7 @@ public class MailController {
 
         String code = getEmailVerifCode();
         System.out.println(code);
-        String codeMsg = "尊敬的用户：您的校验码： <h1 style='color:red'>" + code + "</h1>工作人员不会索取，请勿泄漏。<br><br><br><br><br><br><br>" +
+        String codeMsg = "尊敬的用户：您的校验码： <h1 style='color:red'>" + code + "</h1>工作人员不会索取，请勿泄漏. <br/>有效期30分钟.<br><br><br><br><br><br><br>" +
                 "<br><br>"+ webName + "团队";
         String title = webName + "校验码";
         mailService.sendSimple(userName, title, codeMsg);
