@@ -95,9 +95,8 @@ $('#userLogin').click(function () {
             url: 'userlogin', //目标地址
             data: {userName:userName, password:password},
             success: function (data) {
-                alert(data.msg);
-                alert(date.url);
-                alert(data.data);
+                setCookie('jsoso', userName + "-" + data.data);
+                window.location.href= data.url;
             }
         });
     }

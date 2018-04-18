@@ -43,4 +43,20 @@ public class SessionUtil {
         int seconds = 60;
         cacheDataFactory.updateCacheData(key, UUID, seconds);
     }
+
+    public boolean checkUserSession(String cookieValue) {
+        String[] cookieStr = cookieValue.split("-");
+        if(cookieStr != null && cookieStr.length == 2) {
+            Object userName = cookieStr[0];
+            Object sessionValue = cookieStr[1];
+            if(userName != null && sessionValue != null) {
+                String key = RedisType.userSession + userName;
+                Object value = cacheDataFactory.getCacheDataByKey(key);
+                if(value != null && value.toString().equalsIgnoreCase(sessionValue.toString())) {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }
