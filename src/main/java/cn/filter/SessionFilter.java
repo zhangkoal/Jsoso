@@ -45,11 +45,7 @@ public class SessionFilter implements Filter {
                         FilterChain chain) throws IOException, ServletException {
         HttpServletRequest hrequest = (HttpServletRequest)request;
         String requestUrl = hrequest.getRequestURI();
-        if((requestUrl.equalsIgnoreCase("/") || requestUrl.equalsIgnoreCase("/register")) ||
-                requestUrl.endsWith(".js")) {
-            chain.doFilter(request, response);
-            return;
-        } else {
+        if(requestUrl.endsWith(".jso")) {
             Cookie[] cookie = hrequest.getCookies();
             System.out.println(cookie);
             System.out.println("执行过滤操作");
@@ -68,6 +64,9 @@ public class SessionFilter implements Filter {
                 servletResponse.sendRedirect("");
                 //request.getRequestDispatcher("").forward(request, response);
             }
+        } else {
+            chain.doFilter(request, response);
+            return;
         }
     }
 
