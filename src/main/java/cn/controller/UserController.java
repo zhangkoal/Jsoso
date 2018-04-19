@@ -51,9 +51,14 @@ public class UserController {
         msg.setMsg("登陆成功");
         return msg;
     }
-
-
-
+    @RequestMapping(value = ".well-known/acme-challenge/HFnuwP0v_UxXMcZMKp5kdVr48fj9avNLDOeT0HZHd7I",method = RequestMethod.GET)
+    public String  verSsl() throws Exception {
+        return "test";
+    }
+    @RequestMapping(value = ".well-known/acme-challenge/qOkV4FKHG-YFTg0r7eDtbRWIvvTZIM9vQ-rz2wY2QK0",method = RequestMethod.GET)
+    public String  verSsl2() throws Exception {
+        return "test2";
+    }
     @RequestMapping("userRegist")
     @ResponseBody
     public Msg userRegister(@RequestParam("userName")String userName,  @RequestParam("password")String password,
