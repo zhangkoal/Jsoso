@@ -114,7 +114,11 @@ $('#submitBtn').click(function () {
             url: '/userRegist', //目标地址
             data: {userName : userName, password:password, emailCode:emailCode},
             success: function (data) {
-                alert(data.msg);
+                if(data.code == 10) {
+                    alert(data.msg);
+                    window.location.href= data.url;
+                }
+
             }
         });
     }

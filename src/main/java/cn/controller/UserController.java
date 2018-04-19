@@ -85,6 +85,7 @@ public class UserController {
         iUserService.save(user);
         msg.setCode(CommonStatus.NORMAL.getId());
         msg.setMsg("注册成功！");
+        msg.setUrl("login");
         return msg;
     }
 }
