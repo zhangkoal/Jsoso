@@ -37,4 +37,5 @@ function checkCookie() {
             setCookie("jsoso", jsoso, 365);
         }
     }
+
 }

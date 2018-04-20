@@ -90,6 +90,20 @@ public class CacheDataFactory implements Serializable {
 	}
 
 	/**
+	 * 获取结束时间
+	 * @return
+	 */
+	public long getCacheDateTime(String key){
+		long ttl = -1;
+		Jedis jedis = redisPool.getJedis();
+		if(jedis != null) {
+			ttl = jedis.ttl(key);
+			RedisPool.closeConn(jedis);
+		}
+		return ttl;
+	}
+
+	/**
 	 *
 	 * @param key
 	 * @return

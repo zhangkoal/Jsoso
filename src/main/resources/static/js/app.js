@@ -95,8 +95,13 @@ $('#userLogin').click(function () {
             url: 'userlogin', //目标地址
             data: {userName:userName, password:password},
             success: function (data) {
-                setCookie('jsoso', userName + "-" + data.data);
-                window.location.href= data.url;
+                if(data.code == 10) {
+                    setCookie('jsoso', userName + "-" + data.data);
+                    window.location.href= data.url;
+                } else {
+                    alert(data.msg);
+                }
+
             }
         });
     }

@@ -60,17 +60,18 @@ public class SessionFilter implements Filter {
             }
             if(!flag) {
                 HttpServletResponse servletResponse = (HttpServletResponse) response;
-                //采用重定义可以去年
+                //采用重定义可以去掉
                 servletResponse.sendRedirect("");
                 //request.getRequestDispatcher("").forward(request, response);
+            }else {
+                chain.doFilter(request, response);
+                return;
             }
         } else {
             chain.doFilter(request, response);
             return;
         }
     }
-
-
 
     @Override
     public void destroy() {

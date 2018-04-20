@@ -24,15 +24,6 @@ public class UserController {
     @Autowired
     private IUserService iUserService;
 
-    @RequestMapping(value = "",method = RequestMethod.GET)
-    public String login(HttpServletRequest request) {
-        return "login";
-    }
-    @RequestMapping(value = "register",method = RequestMethod.GET)
-    public String register(HttpServletRequest request) {
-        return "register";
-    }
-
     @RequestMapping("userlogin")
     @ResponseBody
     public Msg loginIndex(String userName, String password) throws Exception {
@@ -47,17 +38,13 @@ public class UserController {
         sessionUtil.insertUserSession(userName, userLoginUUID);
         msg.setCode(CommonStatus.NORMAL.getId());
         msg.setData(userLoginUUID);
-        msg.setUrl("index");
+        msg.setUrl("main.jso");
         msg.setMsg("登陆成功");
         return msg;
     }
     @RequestMapping(value = ".well-known/acme-challenge/HFnuwP0v_UxXMcZMKp5kdVr48fj9avNLDOeT0HZHd7I",method = RequestMethod.GET)
     public String  verSsl() throws Exception {
         return "test";
-    }
-    @RequestMapping(value = ".well-known/acme-challenge/qOkV4FKHG-YFTg0r7eDtbRWIvvTZIM9vQ-rz2wY2QK0",method = RequestMethod.GET)
-    public String  verSsl2() throws Exception {
-        return "test2";
     }
     @RequestMapping("userRegist")
     @ResponseBody
