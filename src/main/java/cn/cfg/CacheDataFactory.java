@@ -71,7 +71,7 @@ public class CacheDataFactory implements Serializable {
 		if (value == null) {
 			value = "0";
 		}
-		if(seconds == null) {
+ 		if(seconds == null) {
 			jedis.set(key, value.toString());
 		} else {
 			jedis.setex(key, seconds.intValue(), value.toString());

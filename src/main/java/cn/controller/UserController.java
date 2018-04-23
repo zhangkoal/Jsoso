@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpServletRequest;
+import java.util.Date;
 
 @Controller
 public class UserController {
@@ -74,6 +75,8 @@ public class UserController {
         user.setUesrName(userName);
         user.setPassword(password);
         user.setUserType(1);
+        user.setCreate_time(new Date());
+        user.setModifiedTime(new Date());
         iUserService.save(user);
         msg.setCode(CommonStatus.NORMAL.getId());
         msg.setMsg("注册成功！");

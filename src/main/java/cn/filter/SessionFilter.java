@@ -63,14 +63,10 @@ public class SessionFilter implements Filter {
                 //采用重定义可以去掉
                 servletResponse.sendRedirect("");
                 //request.getRequestDispatcher("").forward(request, response);
-            }else {
-                chain.doFilter(request, response);
-                return;
             }
-        } else {
-            chain.doFilter(request, response);
-            return;
         }
+        chain.doFilter(request, response);
+        return;
     }
 
     @Override
