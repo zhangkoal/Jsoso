@@ -45,7 +45,7 @@ public class UserController {
     }
     @RequestMapping(value = ".well-known/acme-challenge/HFnuwP0v_UxXMcZMKp5kdVr48fj9avNLDOeT0HZHd7I",method = RequestMethod.GET)
     public String  verSsl() throws Exception {
-        return "test";
+        return "ssl";
     }
     @RequestMapping("userRegist")
     @ResponseBody

@@ -1,0 +1,36 @@
+body{
+    background-image:url(../img/login.jpg);
+}
+.login-title{
+    border-width: 0px;
+    position: absolute;
+    left: 568px;
+    top: 154px;
+    width: 308px;
+    height: 74px;
+    font-family: 'MicrosoftTaiLe', 'Microsoft Tai Le';
+    font-weight: 400;
+    font-style: normal;
+    color: rgba(0, 0, 0, 0.427450980392157);
+    line-height: 22px;
+}
+.main-body{
+    width: 400px;
+    height: 420px;
+    margin-left: 38%;
+    border: 1px solid;
+    margin-top: 10%;
+}
+.login-title{
+    border-width: 0px;
+    position: absolute;
+    left: 568px;
+    top: 154px;
+    width: 308px;
+    height: 74px;
+    font-family: 'MicrosoftTaiLe', 'Microsoft Tai Le';
+    font-weight: 400;
+    font-style: initial;
+    color: rgba(0, 0, 0, 0.427450980392157);
+    line-height: 22px;
+}

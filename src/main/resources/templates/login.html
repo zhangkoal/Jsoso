@@ -13,25 +13,20 @@
 </head>
 
 <body>
-  <div class="py-5">
     <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <h1 class="text-danger text-center">WWW.JSOSO.CN</h1>
-        </div>
-        <div class="col-md-6">
-          <div class="card text-white p-5 bg-primary">
+        <div class="main-body">
+          <div class="p-5">
             <div class="card-body">
-              <h2 class="mb-4 text-center">登陆</h2>
+              <h2 class="mb-4 text-center text-black">登陆</h2>
               <form role="form" id="loginForm" onsubmit="return false">
-                <div class="form-group"> <label>邮箱</label>
+                <div class="form-group text-black">
                   <input type="email" name="email" class="form-control" id="email" placeholder="输入邮箱"/></div>
-                <div class="form-group"> <label>密码</label>
+                <div class="form-group text-black login-pwd">
                   <input type="password"  name="password" class="form-control" id="password" placeholder="输入密码"/> </div>
                 <button type="submit" class="btn btn-block btn-danger login-btn" id="userLogin">登陆</button>
               </form>
               <div class="margin-top-31">
-                <a class="forgotPwd-a">忘记密码</a>
+                <a class="forgotPwd-a blue-text">忘记密码</a>
                 <a class="register-a"  onclick="window.location.href='register';return false;">立即注册</a>
               </div>
             </div>

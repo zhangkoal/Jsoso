@@ -149,7 +149,7 @@ a {
     text-decoration: underline; }
 
 a:not([href]):not([tabindex]) {
-  color: inherit;
+  color:#1890FF;
   text-decoration: none;
   cursor: pointer;
 }
@@ -360,7 +360,10 @@ hr {
 small,
 .small {
   font-size: 80%;
-  font-weight: 200; }
+  font-weight: 400;
+  font-size: 14px;
+  color: #F5222D;
+}
 
 mark,
 .mark {
@@ -6189,4 +6192,19 @@ html, body {
 .log-in-now{
   font-size: 14px;
   float: right;
+}
+body{
+   background-image:url(../img/login.jpg);
+ }
+.main-body{
+  width: 521px;
+  height: 400px;
+  margin-left: 20%;
+  margin-top: 10%;
+}
+.blue-text{
+  color: #1890FF;
+}
+.login-pwd, .login-btn{
+  margin-top: 35px;
 }
