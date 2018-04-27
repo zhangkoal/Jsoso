@@ -162,3 +162,23 @@ function countDown(countDownTime){
         }
     },1000);
 }
+
+//登陆
+$.ajax({
+    type: "post", //用Post方式传输
+    dataType: "json", //数据格式:JSON
+    url: '/sessionTime', //目标地址
+    success: function (data) {
+        data--;
+        var timer=setInterval(function(){
+            if(data>0){
+                jQuery("#sessionTime").html("Session过期时间:"+ data.toString()+"秒");
+                data--;
+            }else{
+                clearInterval(timer);
+                alert("请重新登陆！");
+                window.location.href="";
+            }
+        },1000);
+    }
+});
