@@ -106,6 +106,11 @@ $('#userLogin').click(function () {
         });
     }
 });
+$(this).keydown(function (e){
+    if(e.which == "13"){
+        $('#userLogin').click()
+    }
+})
 
 $('#submitBtn').click(function () {
     $('#formCheckId').bootstrapValidator('validate')
