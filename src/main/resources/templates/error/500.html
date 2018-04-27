@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+body{
+	font-family: Arial, Helvetica, Sans-Serif;
+	background-color: #F0F2F5;
+	overflow: hidden;
+}
+.returnIndex{
+	width: 89px;
+	height: 32px;
+	background-color: rgba(24, 144, 255, 1);
+	border: none;
+	border-radius: 4px;
+	text-align: center;
+	color:#fff;
+	line-height: 32px;
+	cursor:pointer;
+}
+.left-div{
+	display:inline-block;
+	margin-left:10%;
+}
+.left-img{
+	width:520px;
+	height:224px;
+}
+.right-div{
+	display:inline-block;line-height:40px;margin-left:20%;
+}
+.right-img{
+	width:153px;
+	height:68px;
+}
+.tip-cls{
+	border-width: 0px;left: 0px;top: 24px;width: 181px;white-space: nowrap;color:#9C8B8C;
+	font-size:20px;
+}
+
+</style>
+<body>
+	<div style="margin-top:13%;";>
+		<div class="left-div">
+			<img class="left-img" src="img/error/500.png">
+		</div>
+			<div class="right-div">
+			<img class="right-img" src="img/error/500-num.png">
+			<div class="tip-cls">
+				<p>抱歉，服务器出错了</p>
+			</div>
+			<div class="returnIndex">
+				<a onclick="window.location.href='register';return false;">返回首页</a>
+			</div>
+			</div>
+	</div>
+</body>
+</html>

@@ -39,7 +39,7 @@ public class UserController {
         sessionUtil.insertUserSession(userName, userLoginUUID);
         msg.setCode(CommonStatus.NORMAL.getId());
         msg.setData(userLoginUUID);
-        msg.setUrl("main.jso");
+        msg.setUrl("index.jso");
         msg.setMsg("登陆成功");
         return msg;
     }
