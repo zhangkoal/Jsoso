@@ -134,6 +134,8 @@ function getEamilCode(){
         if(!jQuery("#emailCode").hasClass('disabled')){
             jQuery("#emailCode").addClass('disabled');
             var countDownTime=parseInt(10);    //在这里设置时长
+            $('#emailCode').removeAttr('onclick');
+            $("#emailCode").attr("disabled","disabled");
             jQuery("#emailCode").val(countDownTime+"秒后重新获取");
             countDown(countDownTime - 1);
         }
@@ -158,7 +160,9 @@ function countDown(countDownTime){
         }else{
             clearInterval(timer);
             jQuery("#emailCode").removeClass('disabled');
-            jQuery("#emailCode").val('获取邮箱验证码')
+            jQuery("#emailCode").val('获取邮箱验证码');
+            $("#emailCode").attr("onclick","getEamilCode()");
+            $('#emailCode').removeAttr('disabled');
         }
     },1000);
 }
