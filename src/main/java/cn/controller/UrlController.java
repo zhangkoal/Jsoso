@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 public class UrlController {
     @RequestMapping(value = "",method = RequestMethod.GET)
     public String login(HttpServletRequest request) {
-        return "login";
+        return "index";
     }
     @RequestMapping(value = "login",method = RequestMethod.GET)
     public String loginUrl(HttpServletRequest request) {
@@ -27,8 +27,8 @@ public class UrlController {
      * @param request
      * @return
      */
-    @RequestMapping(value = "main.jso",method = RequestMethod.GET)
+    @RequestMapping(value = "index.jso",method = RequestMethod.GET)
     public String mainIndex(HttpServletRequest request) {
-        return "main";
+        return "index";
     }
 }

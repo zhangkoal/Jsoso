@@ -61,7 +61,7 @@ public class SessionFilter implements Filter {
             if(!flag) {
                 HttpServletResponse servletResponse = (HttpServletResponse) response;
                 //采用重定义可以去掉
-                servletResponse.sendRedirect("");
+                servletResponse.sendRedirect("login");
                 //request.getRequestDispatcher("").forward(request, response);
             }
         }

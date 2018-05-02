@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#site-nav, #sn-container{
+    height: 32px;
+    width: 100%;
+    color: #999;
+    line-height: 32px;
+}
+#site-nav{
+    font-family:"Microsoft YaHei",tahoma,arial,'Hiragino Sans GB','\5b8b\4f53',sans-serif;
+    width: auto;
+    position: relative!important;
+    background: #f2f2f2;
+    z-index: 99999;
+    -webkit-transform: translate3d(0,0,0);
+    border-bottom: 1px solid #e5e5e5;
+    min-width: 990px;
+}
+#sn-by{
+    position: relative;
+    left: -15px;
+    margin: auto;
+    width: 1230px;
+}
+#site-nav .sn-login-info, #site-nav .sn-user-nick{
+    display: inline-block;
+    line-height: 26px;
+}
+#site-nav .sn-container, #site-nav .sn-login-info, #sn-bd{
+    position: relative;
+}
+#site-nav, #site-nav a:link, #site-nav a:visited{
+    color: #999;
+}
+#site-nav .sn-login{
+    padding-left:20px;
+}
+.sn-register{
+    padding-left: 10px;
+}
+em{
+    font-size: 13px;
+}
+#site-nav a:active, #site-nav a:hover {
+    color: #FF0036;
+}
+a{
+    cursor: pointer;
+}
+li, ol, ul {
+    list-style: none;
+}
+ol, ul {
+    list-style: none;
+}
+.sn-quick-menu{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.mui-global-iconfont{
+    position: relative;
+    top: -1px;
+    color: #FF0036;
+    font-family: mui-global-iconfont!important;
+    font-size: 12px;
+    font-style: normal;
+}
+#site-nav .sn-quick-menu li{
+    float: left;
+    position: relative;
+    margin-right: 20px;
+}
+#mallSearch{
+    width: 625px;
+    padding-top: 38px;
+    margin: auto;
+}
+.mallForm{
+    border: solid #FF0036;
+    border-radius: 5px;
+}
+.mallForm input{
+    height: 36px;
+    width: 491px;
+    font: 16px/22px arial;
+    box-sizing: border-box;
+    background: 0 0;
+    border: none;
+    border-radius: 2px 0 0 2px;
+    padding: 7px 3px 7px 5px;
+    margin: 0;
+    color: #606060;
+    font-size: 100%;
+    border: 0;
+}
+.mallForm input:focus {
+    outline:none;
+}
+.mallForm button{
+    width: 130px;
+    height: 36px;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    position: absolute;
+    z-index: 1;
+    border: 0;
+    background-color: #FF0036;
+    color: #fff;
+}
