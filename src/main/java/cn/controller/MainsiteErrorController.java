@@ -11,12 +11,11 @@ public class MainsiteErrorController implements ErrorController {
 
     @RequestMapping(value=ERROR_PATH)
     public String handleError(){
-        return "500";
+        return "error/500.html";
     }
 
     @Override
     public String getErrorPath() {
-        // TODO Auto-generated method stub
         return ERROR_PATH;
     }
 
