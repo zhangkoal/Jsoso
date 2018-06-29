@@ -21,6 +21,7 @@
     <file url="file://$PROJECT_DIR$/src/main/resources/static/js/jquery-3.2.1.js" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/main/resources/static/js/jquery-3.2.1.min.js" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/main/resources/static/js/npm.js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/templates/500.html" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/main/resources/templates/emailTemp.html" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/main/resources/templates/error/500.html" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/main/resources/templates/login.html" charset="GBK" />

@@ -1,38 +1,126 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="utf-8">
     <title>品质生活</title>
     <link rel="shortcut icon" href="img/bitbug_favicon.ico">
     <link rel="bookmark"  type="image/x-icon"  href="img/bitbug_favicon.ico"/>
-    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
-    <link rel="stylesheet" href="css/index.css" type="text/css">
-
+    <link rel="stylesheet" href="css/main-index.css" type="text/css">
+    <link rel="stylesheet" href="layui/css/layui.css" media="all">
 </head>
 <body>
-    <div class="mainPage">
-        <div id="site-nav">
-            <div id="sn-by">
-                <div id="sn-container">
-                    <p id="login-info" class="sn-login-info">
-                        <em>欢迎来到JSO</em>
-                        <a class="sn-login" target="_top" onclick="window.location.href='login'">请登陆</a>
-                        <a class="sn-register" onclick="window.location.href='register'">免费注册</a>
-                    </p>
-                    <ul class="sn-quick-menu">
-                        <li><a>我的JSO</a></li>
-                        <li><a><i class="glyphicon glyphicon-shopping-cart	"></i>购物车</a></li>
-                        <li><a>客户服务</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div id="mallSearch">
-            <form class="mallForm">
-                <input id="searchInput"><span></span>
-                <button type="submit">搜索</button>
-            </form>
+
+<div class="top">
+    <div class="top_main">
+        <div class="top_left"><span>有你真好</span></div>
+        <div class="top_right">
+            <ul>
+                <li><a><i class="layui-icon layui-icon-cart"></i>购物车</a></li>
+                <li><a onclick="window.location.href='login'"><i class="layui-icon layui-icon-face-smile"></i>登陆</a></li>
+                <li><a onclick="window.location.href='register';return false;" target="_blank">
+                    <i class="layui-icon layui-icon-username"></i>注册</a></li>
+            </ul>
         </div>
     </div>
+</div>
+<div class="nav">
+    <div id="nav">
+        <div class="nav_menu">
+            <ul>
+                <li>
+                    <a href="/">首页</a>
+                </li>
+                <li class="nav_hover">
+                    <a href="custom.html">真爱定制</a>
+                    <div class="nav_down">
+                        <div class="nav_main">
+                            <div class="nav_title">
+                                <h2>真爱定制</h2>
+                                <ul class="cate_menu">
+                                    <li>一句告白、一件信物、一生承诺。</li>
+                                    <li>与FORMYROSE（弗蒂斯）一起见证动人的爱情故事</li>
+                                </ul>
+                                <a href="custom.html" class="see_all">开始定制 &gt;&gt;</a>
+                            </div>
+                            <div class="cate_img">
+                                <a href="custom.html" class="imgblock"><img src="img/nav/des.jpg"></a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="nav_hover">
+                    <a href="ring.html">永生花</a>
+                    <div class="nav_down">
+                        <div class="nav_main">
+                            <div class="nav_title">
+                                <h2>玫瑰系统</h2>
+                                <ul class="cate_menu">
+                                    <li><a href="category-40-b0.html">音乐玫瑰</a></li>
+                                    <li><a href="category-48-b0.html">玫瑰球形</a></li>
+                                    <li><a href="category-49-b0.html">玫瑰圆盒</a></li>
+                                    <li><a href="category-50-b0.html">玫瑰方盒</a></li>
+                                    <li><a href="category-51-b0.html">玫瑰心形盒</a></li>
+                                </ul>
+                                <a href="ring.html" class="see_all">查看全部 &gt;&gt;</a>
+                            </div>
+                            <div class="cate_img">
+                                <a href="custom.html" class="imgblock nav-img"><img src="img/data/afficheimg/meigui.jpg"></a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="shop.html">精致生活</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="layui-carousel" id="banner" lay-anim="fade" lay-indicator="inside" lay-arrow="hover">
+    <div carousel-item="">
+        <div class="banner_img layui-this">
+            <a href="a.html" target="_blank"><img src="img/data/afficheimg/1.jpg" alt="214情人节"></a>
+        </div>
+        <div class="banner_img">
+            <a href="b.html" target="_blank"><img src="img/data/afficheimg/2.jpg" alt="彩宝系列"></a>
+        </div>
+        <div class="banner_img">
+            <a href="c.html" target="_blank"><img src="img/data/afficheimg/3.jpg" alt="新品上市"></a>
+        </div>
+        <div class="banner_img">
+            <a href="d.html" target="_blank"><img src="img/data/afficheimg/4.jpg" alt="更多作品"></a>
+        </div>
+        <div class="banner_img">
+            <a href="e.html" target="_blank"><img src="img/data/afficheimg/5.jpg" alt="遇见系列"></a>
+        </div>
+    </div>
+    <div class="layui-carousel-ind">
+        <ul>
+            <li class=""></li>
+            <li class=""></li>
+            <li class=""></li>
+            <li class=""></li>
+            <li class=""></li>
+        </ul>
+    </div>
+    <button class="layui-icon layui-carousel-arrow" lay-type="sub"></button>
+    <button class="layui-icon layui-carousel-arrow" lay-type="add"></button>
+</div>
+
+<script src="layui/layui.js"></script>
+<script>
+    layui.use('carousel', function(){
+        var carousel = layui.carousel;
+        //建造实例
+        carousel.render({
+            elem: '#banner'
+            ,width: '100%' //设置容器宽度
+            ,height: '550px'
+            ,arrow: 'always' //始终显示箭头
+            //,anim: 'updown' //切换动画方式
+        });
+    });
+</script>
 </body>
 </html>
