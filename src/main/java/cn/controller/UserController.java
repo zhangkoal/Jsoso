@@ -43,10 +43,16 @@ public class UserController {
         msg.setMsg("登陆成功");
         return msg;
     }
-    @RequestMapping(value = ".well-known/acme-challenge/HFnuwP0v_UxXMcZMKp5kdVr48fj9avNLDOeT0HZHd7I",method = RequestMethod.GET)
+    @RequestMapping(value = ".well-known/acme-challenge/al1CQqXbmXTZ1D1D2zMD2fJzFS2WJgQmav-BWu_e-PA",method = RequestMethod.GET)
     public String  verSsl() throws Exception {
         return "ssl";
     }
+
+    @RequestMapping(value = ".well-known/acme-challenge/KSjammw-8YxoRJEC7TLX3qPf4DX3qnS0epfesRrLfQE",method = RequestMethod.GET)
+    public String  verSsl2() throws Exception {
+        return "ssl2";
+    }
+
     @RequestMapping("userRegist")
     @ResponseBody
     public Msg userRegister(@RequestParam("userName")String userName,  @RequestParam("password")String password,
