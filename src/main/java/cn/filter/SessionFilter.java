@@ -1,6 +1,9 @@
 package cn.filter;
 
-import cn.Util.SessionUtil;
+import cn.controller.BaseController;
+import cn.util.HttpRequestUtil;
+import cn.util.SessionUtil;
+import cn.util.UserIPAnalysis;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.io.IOException;
@@ -34,6 +37,8 @@ public class SessionFilter implements Filter {
 
     @Autowired
     private SessionUtil sessionUtil;
+
+
 
     @Override
     public void init(FilterConfig config) throws ServletException {

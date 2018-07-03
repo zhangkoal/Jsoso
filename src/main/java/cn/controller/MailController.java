@@ -1,11 +1,8 @@
 package cn.controller;
 
-import cn.Util.Msg;
-import cn.Util.SessionUtil;
-import cn.Util.UUIDGenerator;
-import cn.cfg.CacheDataFactory;
-import cn.cfg.JedisCfg;
-import cn.cfg.RedisPool;
+import cn.util.Msg;
+import cn.util.SessionUtil;
+import cn.util.UUIDGenerator;
 import cn.service.MailService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -13,11 +10,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
-import redis.clients.jedis.Jedis;
-import redis.clients.jedis.JedisPool;
-import redis.clients.jedis.JedisPoolConfig;
-
-import javax.mail.MessagingException;
 
 @Controller
 public class MailController {

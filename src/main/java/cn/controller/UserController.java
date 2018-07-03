@@ -1,8 +1,8 @@
 package cn.controller;
 
-import cn.Util.Msg;
-import cn.Util.SessionUtil;
-import cn.Util.UUIDGenerator;
+import cn.util.Msg;
+import cn.util.SessionUtil;
+import cn.util.UUIDGenerator;
 import cn.constant.CommonStatus;
 import cn.domain.TbUser;
 import cn.service.IUserService;
@@ -13,7 +13,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import javax.servlet.http.HttpServletRequest;
 import java.util.Date;
 
 @Controller
@@ -43,10 +42,16 @@ public class UserController {
         msg.setMsg("登陆成功");
         return msg;
     }
-    @RequestMapping(value = ".well-known/acme-challenge/HFnuwP0v_UxXMcZMKp5kdVr48fj9avNLDOeT0HZHd7I",method = RequestMethod.GET)
+    @RequestMapping(value = ".well-known/acme-challenge/-Ig7TTvvBvqYMRQvNwrz5dykB56LUBl9BKpmrigxdCU",method = RequestMethod.GET)
     public String  verSsl() throws Exception {
         return "ssl";
     }
+
+    @RequestMapping(value = ".well-known/acme-challenge/sZe1pX2zYgRLvIgcnJEKN6-mM82Y6AtyIWxgm0Xu3Y8",method = RequestMethod.GET)
+    public String  verSsl2() throws Exception {
+        return "ssl2";
+    }
+
     @RequestMapping("userRegist")
     @ResponseBody
     public Msg userRegister(@RequestParam("userName")String userName,  @RequestParam("password")String password,

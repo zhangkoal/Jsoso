@@ -1,4 +1,4 @@
-package cn.Util;
+package cn.util;
 
 import cn.cfg.CacheDataFactory;
 import cn.constant.RedisType;

@@ -1,4 +1,4 @@
-package cn.Util;
+package cn.util;
 
 public class ResultMsg {
 

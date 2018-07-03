@@ -1,4 +1,4 @@
-package cn.Util;
+package cn.util;
 
 public class Email {
     private String from;

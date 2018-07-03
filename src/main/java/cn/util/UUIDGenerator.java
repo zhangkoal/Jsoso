@@ -17,7 +17,7 @@
  * under the License.
  */
 
-package cn.Util;
+package cn.util;
 
 import java.net.InetAddress;
 import java.net.UnknownHostException;
