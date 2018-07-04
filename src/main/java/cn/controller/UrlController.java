@@ -11,11 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 @Controller
 public class UrlController {
 
-    @Autowired
-    private BaseController baseController;
 
-    @Autowired
-    private UserIPAnalysis userIPAnalysis;
 
     @RequestMapping(value = "",method = RequestMethod.GET)
     public String login(HttpServletRequest request) {
@@ -38,8 +34,6 @@ public class UrlController {
      */
     @RequestMapping(value = "index.jso",method = RequestMethod.GET)
     public String mainIndex(HttpServletRequest request) {
-        String loginIp = baseController.getIP(request);
-        userIPAnalysis.ipAnalysis(loginIp);
         return "index";
     }
 }

@@ -21,13 +21,14 @@ public class UserIPAnalysis {
     @Autowired
     private ILogServer logServer;
 
-    public TbLog ipAnalysis(String loginIp) {
+    public void ipAnalysis(String loginIp) {
         Gson gson = new Gson();
         //拼装地ip地址
         String tbUrl = ipAnalysis.split(",")[0] + loginIp;
         try {
             //获取淘宝库返回的内容
             String addr = HttpRequestUtil.get(tbUrl);
+            System.out.println("taobaoIPAn:" + addr);
             //将返回的json数据转换成实体对象
             IpAnalysisCa_Tb ipAnalusisTb = gson.fromJson(addr, IpAnalysisCa_Tb.class);
             //进行请求成功与否的判断
@@ -41,7 +42,6 @@ public class UserIPAnalysis {
             log.info("解析IP出错！");
             log.info("未知");
         }
-        return null;
     }
 
     /**
