@@ -107,11 +107,44 @@
     <button class="layui-icon layui-carousel-arrow" lay-type="sub"></button>
     <button class="layui-icon layui-carousel-arrow" lay-type="add"></button>
 </div>
+<div class="cust_design">
+    <div class="cust_title">
+        <h3>经典设计</h3>
+        <p>CHOICE OF MIND</p>
+    </div>
+    <div class="cust_more">
+        <a href="gift.html" target="_blank">探索更多+</a>
+    </div>
 
+    <ul class="cust_recomond">
+        <li>
+            <a href="goods-569.html" target="_blank"><img src="img/goods/goods-1.png" alt="海豚湾之恋"></a>
+            <h4>海豚湾之恋</h4>
+        </li>
+        <li>
+            <a href="goods-779.html" target="_blank"><img src="img/goods/goods-2.png" alt="为爱加冕"></a>
+            <h4>为爱加冕</h4>
+        </li>
+        <li>
+            <a href="goods-1139.html" target="_blank"><img src="img/goods/goods-3.png" alt="遇见幸福"></a>
+            <h4>遇见幸福</h4>
+        </li>
+        <li>
+            <a href="goods-1187.html" target="_blank"><img src="img/goods/goods-4.png" alt="KISS"></a>
+            <h4>KISS</h4>
+        </li>
+        <li>
+            <a href="goods-1193.html" target="_blank"><img src="img/goods/goods-5.png" alt="温情"></a>
+            <h4>温情</h4>
+        </li>
+    </ul>
+</div>
+<div class="index-footer" id="bottom-paeg"></div>
 <script src="layui/layui.js"></script>
 <script>
-    layui.use('carousel', function(){
+    layui.use(['carousel', 'layer'], function(){
         var carousel = layui.carousel;
+        $=layui.$;
         //建造实例
         carousel.render({
             elem: '#banner'
@@ -120,6 +153,7 @@
             ,arrow: 'always' //始终显示箭头
             //,anim: 'updown' //切换动画方式
         });
+        $("#bottom-paeg").load("../static-html/bottom.html");
     });
 </script>
 </body>
