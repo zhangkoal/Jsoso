@@ -6,20 +6,85 @@
     <link rel="shortcut icon" href="img/bitbug_favicon.ico">
     <link rel="bookmark"  type="image/x-icon"  href="img/bitbug_favicon.ico"/>
     <link rel="stylesheet" href="css/main-index.css" type="text/css">
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
     <link rel="stylesheet" href="layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="css/login-register.css" media="all">
 </head>
 <body>
-
 <div class="top">
     <div class="top_main">
         <div class="top_left"><span>有你真好</span></div>
         <div class="top_right">
             <ul>
                 <li><a><i class="layui-icon layui-icon-cart"></i>购物车</a></li>
-                <li><a onclick="window.location.href='login'"><i class="layui-icon layui-icon-face-smile"></i>登陆</a></li>
-                <li><a onclick="window.location.href='register';return false;" target="_blank">
+                <li><a class="btn big-login" data-toggle="modal" onclick="openLoginModal();" href="javascript:void(0)"><i class="layui-icon layui-icon-face-smile"></i>登陆</a></li>
+                <li><a class="btn big-register" data-toggle="modal" onclick="openRegisterModal();" href="javascript:void(0)">
                     <i class="layui-icon layui-icon-username"></i>注册</a></li>
             </ul>
+        </div>
+    </div>
+    <div class="modal fade login" id="loginModal">
+        <div class="modal-dialog login animated">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Login with</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="box">
+                        <div class="content">
+                            <div class="social">
+                                <a class="circle github" href="/auth/github">
+                                    <i class="fa fa-github fa-fw"></i>
+                                </a>
+                                <a id="google_login" class="circle google" href="/auth/google_oauth2">
+                                    <i class="fa fa-google-plus fa-fw"></i>
+                                </a>
+                                <a id="facebook_login" class="circle facebook" href="/auth/facebook">
+                                    <i class="fa fa-facebook fa-fw"></i>
+                                </a>
+                            </div>
+                            <div class="division">
+                                <div class="line l"></div>
+                                <span>or</span>
+                                <div class="line r"></div>
+                            </div>
+                            <div class="error"></div>
+                            <div class="form loginBox">
+                                <form method="post" action="/login" accept-charset="UTF-8">
+                                    <input id="email" class="form-control" type="text" placeholder="Email" name="email">
+                                    <input id="password" class="form-control" type="password" placeholder="Password" name="password">
+                                    <input class="btn btn-default btn-login" type="button" value="Login" onclick="loginAjax()">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="content registerBox" style="display:none;">
+                            <div class="form">
+                                <form method="post" html="{:multipart=>true}" data-remote="true" action="/register" accept-charset="UTF-8">
+                                    <input id="email" class="form-control" type="text" placeholder="Email" name="email">
+                                    <input id="password" class="form-control" type="password" placeholder="Password" name="password">
+                                    <input id="password_confirmation" class="form-control" type="password" placeholder="Repeat Password" name="password_confirmation">
+                                    <input class="btn btn-default btn-register" type="submit" value="Create account" name="commit">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="forgot login-footer">
+                            <span>Looking to
+                                 <a href="javascript: showRegisterForm();">create an account</a>
+                            ?</span>
+                    </div>
+                    <div class="forgot register-footer" style="display:none">
+                        <span>Already have an account?</span>
+                        <a href="javascript: showLoginForm();">Login</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
@@ -139,8 +204,12 @@
         </li>
     </ul>
 </div>
-<div class="index-footer" id="bottom-paeg"></div>
+<div class="index-footer" id="bottom-page"></div>
+<script src="js/jquery-3.2.1.js"></script>
+<script src="js/bootstrap.js"></script>
 <script src="layui/layui.js"></script>
+<script src="js/cookie.js"></script>
+<script src="js/login-register.js"></script>
 <script>
     layui.use(['carousel', 'layer'], function(){
         var carousel = layui.carousel;
@@ -153,7 +222,7 @@
             ,arrow: 'always' //始终显示箭头
             //,anim: 'updown' //切换动画方式
         });
-        $("#bottom-paeg").load("../static-html/bottom.html");
+        $("#bottom-page").load("../static-html/bottom.html");
     });
 </script>
 </body>
