@@ -7,18 +7,23 @@ import cn.constant.CommonStatus;
 import cn.domain.TbUser;
 import cn.service.IUserService;
 import cn.util.UserIPAnalysis;
+import com.qq.connect.QQConnectException;
+import com.qq.connect.oauth.Oauth;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.util.Date;
 
 @Controller
 public class UserController {
+
+    private static final Logger logger = LoggerFactory.getLogger(UserController.class);
+
 
     @Autowired
     private SessionUtil sessionUtil;
@@ -99,5 +104,14 @@ public class UserController {
         msg.setMsg("注册成功！");
         msg.setUrl("login");
         return msg;
+    }
+
+    @RequestMapping("qqLogin")
+    @ResponseBody
+    public String qqLogin(HttpServletRequest request, HttpServletResponse response) throws Exception {
+        String qqLoginUrl = new Oauth().getAuthorizeURL(request);
+        System.out.println(qqLoginUrl);
+        return qqLoginUrl;
+
     }
 }

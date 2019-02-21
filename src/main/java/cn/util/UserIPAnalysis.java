@@ -1,9 +1,11 @@
 package cn.util;
 
+import cn.cfg.RedisPool;
 import cn.domain.TbLog;
 import cn.service.ILogServer;
 import com.google.gson.Gson;
-import lombok.extern.slf4j.Slf4j;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
@@ -11,9 +13,11 @@ import org.springframework.stereotype.Component;
 import java.util.Date;
 
 
-@Slf4j
 @Component
 public class UserIPAnalysis {
+    private static final Logger logger = LoggerFactory.getLogger(RedisPool.class);
+
+
 
     @Value("${swallow.ip.analysis}")
     private String ipAnalysis;
@@ -39,8 +43,8 @@ public class UserIPAnalysis {
                 insertLog(ipAnalusisTb);
             }
         } catch (Exception e) {
-            log.info("解析IP出错！");
-            log.info("未知");
+            logger.info("解析IP出错！");
+            logger.info("未知");
         }
     }
 
@@ -60,7 +64,7 @@ public class UserIPAnalysis {
         tbLog.setIsp(data.getIsp());
         tbLog.setLoginTime(new Date());
         logServer.save(tbLog);
-        log.info("IP:" + tbLog.getIp() + "-- enter web");
+        logger.info("IP:" + tbLog.getIp() + "-- enter web");
     }
 
 }

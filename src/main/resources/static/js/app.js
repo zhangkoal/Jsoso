@@ -191,3 +191,19 @@ $.ajax({
         },1000);
     }
 });
+
+//QQ登录
+function qqLogin() {
+    $.ajax({
+        type: "get", //用Post方式传输
+        url: '/qqLogin', //目标地址
+        success: function (url) {
+            window.location.href=url;
+        },
+        error:function(XMLHttpRequest, textStatus, errorThrown) {
+            alert(XMLHttpRequest.status);
+            alert(XMLHttpRequest.readyState);
+            alert(textStatus);
+        }
+    });
+}
