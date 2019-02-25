@@ -420,3 +420,11 @@ img {
     line-height: 44px;
     color: #999;
 }
+
+.qq_login{
+    width: 79.6px;
+    height: 78px;
+    display: inline-block;
+    background-position: -153px -711px;
+    background-image: url(../img/n-indexIcons-4.png);
+}

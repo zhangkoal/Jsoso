@@ -1,52 +1,7 @@
 $(function () {
-    $('#formCheckId').bootstrapValidator({
-        live: 'disabled',//验证时机，enabled是内容有变化就验证（默认），disabled和submitted是提交再验证
-        message: 'This value is not valid',
-        feedbackIcons: {
-            valid: 'glyphicon glyphicon-ok',
-            invalid: 'glyphicon glyphicon-remove',
-            validating: 'glyphicon glyphicon-refresh'
-        },
-        fields: {
-            email: {
-                validators: {
-                    notEmpty: {
-                        message: '邮箱地址不能为空'
-                    },
-                    emailAddress: {
-                        message: '邮箱地址格式有误'
-                    },
-                }
-            },
-            password:{
-                validators: {
-                    notEmpty: {
-                        message: '文本框必须输入'
-                    },
-                    notEmpty: {//检测非空,radio也可用
-                        message: '文本框必须输入'
-                    },
-                    stringLength: {//检测长度
-                        min: 6,
-                        max: 30,
-                        message: '长度必须在6-30之间'
-                    },
-                    identical: {//与指定控件内容比较是否相同，比如两次密码不一致
-                        field: 'confirmPassword',//指定控件name
-                        message: '输入的内容不一致'
-                    },
-                }
-            },
-            confirmPassword:{
-                validators: {
-                    identical: {//与指定控件内容比较是否相同，比如两次密码不一致
-                        field: 'password',//指定控件name
-                        message: '输入的内容不一致'
-                    },
-                }
-            }
-        }
-    });
+
+    //校验有没有登录
+    checkCookie();
     $('#loginForm').bootstrapValidator({
         live: 'disabled',//验证时机，enabled是内容有变化就验证（默认），disabled和submitted是提交再验证
         message: 'This value is not valid',
@@ -195,10 +150,11 @@ $.ajax({
 //QQ登录
 function qqLogin() {
     $.ajax({
-        type: "get", //用Post方式传输
+        type: "GET", //GET
         url: '/qqLogin', //目标地址
+        xhrFields: { withCredentials: true},
         success: function (url) {
-            window.location.href=url;
+            window.location.href= url;
         },
         error:function(XMLHttpRequest, textStatus, errorThrown) {
             alert(XMLHttpRequest.status);

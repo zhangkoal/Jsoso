@@ -135,3 +135,12 @@ ol, ul {
     width: 60px;
     height: 60px;
 }
+.qq_login{
+    border-radius: 100px;
+    display: inline-block;
+    margin: 0 17px;
+    padding: 15px;
+    background-position: -169px -633px;
+    margin-top: 29px;
+    background-image: url(../img/n-indexIcons-4.png);
+}

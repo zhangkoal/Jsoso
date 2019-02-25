@@ -1,13 +1,14 @@
 package cn.controller;
 
-import cn.util.Msg;
-import cn.util.SessionUtil;
-import cn.util.UUIDGenerator;
+import cn.constant.ResultAction;
+import cn.constant.ResultCode;
+import cn.domain.LoginUserInfo;
+import cn.service.IQQUserService;
+import cn.util.*;
 import cn.constant.CommonStatus;
 import cn.domain.TbUser;
 import cn.service.IUserService;
-import cn.util.UserIPAnalysis;
-import com.qq.connect.QQConnectException;
+import com.google.gson.Gson;
 import com.qq.connect.oauth.Oauth;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -18,6 +19,7 @@ import org.springframework.web.bind.annotation.*;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.util.Date;
+import java.util.List;
 
 @Controller
 public class UserController {
@@ -32,10 +34,17 @@ public class UserController {
     private IUserService iUserService;
 
     @Autowired
+    private IQQUserService iQQUserService;
+
+    @Autowired
     private BaseController baseController;
 
     @Autowired
     private UserIPAnalysis userIPAnalysis;
+
+    @Autowired
+    private QQUtil qqUtil;
+
 
     @RequestMapping("userlogin")
     @ResponseBody
@@ -106,12 +115,55 @@ public class UserController {
         return msg;
     }
 
+    /*
+     * @Author zhangk
+     * @Description QQ跳转
+     * @Date 2019/2/22 12:23
+     * @Param
+     * @return
+     **/
     @RequestMapping("qqLogin")
     @ResponseBody
     public String qqLogin(HttpServletRequest request, HttpServletResponse response) throws Exception {
-        String qqLoginUrl = new Oauth().getAuthorizeURL(request);
-        System.out.println(qqLoginUrl);
-        return qqLoginUrl;
-
+        return new Oauth().getAuthorizeURL(request);
     }
+
+    /**
+     * @Author zhangk
+     * @Description 获取从QQ登录人员信息
+     * @Date 2019/2/22 10:20
+     * @Param
+     * @return
+     **/
+    @RequestMapping("getQQUserInfo")
+    @ResponseBody
+    public String getUserInfoBean(HttpServletRequest request) {
+        Gson gson = new Gson();
+        return gson.toJson(qqUtil.getUserInfoBean(request));
+    }
+
+    /**
+     * @Author zhangk
+     * @Description 获取QQ用户信息通过OPENiD
+     * @Date 2019/2/22 15:28
+     * @Param
+     * @return
+     **/
+    @RequestMapping("getUserInfoByOpenId")
+    @ResponseBody
+    public ResultAction getUserInfoByOpenId(@RequestParam("openId")String openId) {
+        ResultAction resultAction = new ResultAction();
+
+        List<LoginUserInfo> useInfo = iQQUserService.getUserInfo(openId);
+        if(useInfo != null) {
+            resultAction.setCode(ResultCode.OK.getCode());
+            LoginUserInfo user = useInfo.get(0);
+            user.setAcceeToken(null);
+            user.setQqUserId(null);
+            resultAction.setData(user);
+        }
+        return resultAction;
+    }
+
+
 }
