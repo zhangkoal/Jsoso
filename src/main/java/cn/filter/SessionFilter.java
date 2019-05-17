@@ -1,25 +1,13 @@
 package cn.filter;
 
-import cn.controller.BaseController;
-import cn.util.HttpRequestUtil;
 import cn.util.SessionUtil;
-import cn.util.UserIPAnalysis;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import java.io.IOException;
-
-
-
-import javax.servlet.Filter;
-import javax.servlet.FilterChain;
-import javax.servlet.FilterConfig;
-import javax.servlet.ServletException;
-import javax.servlet.ServletRequest;
-import javax.servlet.ServletResponse;
-import javax.servlet.annotation.WebFilter;
+import javax.servlet.*;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import java.io.IOException;
 
 
 /**
@@ -31,8 +19,12 @@ import javax.servlet.http.HttpServletResponse;
  * @author Angel(QQ:412887952)
  * @version v.0.1
  */
-@WebFilter(filterName="myFilter",urlPatterns="/*")
+
 public class SessionFilter implements Filter {
+    /**
+     * @Component
+     @WebFilter(filterName="myFilter",urlPatterns="/*")
+     */
 
 
     @Autowired

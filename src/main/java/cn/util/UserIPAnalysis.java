@@ -1,7 +1,7 @@
 package cn.util;
 
-import cn.domain.TbLog;
-import cn.service.ILogServer;
+import cn.college.service.log.LogService;
+import cn.entity.TbLog;
 import com.google.gson.Gson;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,7 +19,7 @@ public class UserIPAnalysis {
     private String ipAnalysis;
 
     @Autowired
-    private ILogServer logServer;
+    private LogService logService;
 
     public void ipAnalysis(String loginIp) {
         Gson gson = new Gson();
@@ -39,8 +39,8 @@ public class UserIPAnalysis {
                 insertLog(ipAnalusisTb);
             }
         } catch (Exception e) {
-            log.info("解析IP出错！");
-            log.info("未知");
+//            log.info("解析IP出错！");
+//            log.info("未知");
         }
     }
 
@@ -59,8 +59,8 @@ public class UserIPAnalysis {
         tbLog.setCounty(data.getCounty());
         tbLog.setIsp(data.getIsp());
         tbLog.setLoginTime(new Date());
-        logServer.save(tbLog);
-        log.info("IP:" + tbLog.getIp() + "-- enter web");
+        logService.addLoginLog(tbLog);
+//        log.info("IP:" + tbLog.getIp() + "-- enter web");
     }
 
 }

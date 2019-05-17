@@ -1,229 +1,234 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>品质生活</title>
-    <link rel="shortcut icon" href="img/bitbug_favicon.ico">
-    <link rel="bookmark"  type="image/x-icon"  href="img/bitbug_favicon.ico"/>
-    <link rel="stylesheet" href="css/main-index.css" type="text/css">
-    <link href="css/bootstrap.css" rel="stylesheet" />
-    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-    <link rel="stylesheet" href="layui/css/layui.css" media="all">
-    <link rel="stylesheet" href="css/login-register.css" media="all">
+  <meta charset="UTF-8">
+  <title>品质生活</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <link rel="shortcut icon" href="img/bitbug_favicon.ico">
+  <link rel="bookmark"  type="image/x-icon"  href="img/bitbug_favicon.ico"/>
+  <script type="text/javascript" src="../res/layui/layui.js"></script>
+  <link rel="stylesheet" type="text/css" href="../res/layui/css/layui.css">
+  <link rel="stylesheet" type="text/css" href="../res/static/css/main.css">
+
+  <!--加载meta IE兼容文件-->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+<![endif]-->
 </head>
 <body>
-<div class="top">
-    <div class="top_main">
-        <div class="top_left"><span>有你真好</span></div>
-        <div class="top_right">
-            <ul>
-                <li><a><i class="layui-icon layui-icon-cart"></i>购物车</a></li>
-                <li><a class="btn big-login" data-toggle="modal" onclick="openLoginModal();" href="javascript:void(0)"><i class="layui-icon layui-icon-face-smile"></i>登陆</a></li>
-                <li><a class="btn big-register" data-toggle="modal" onclick="openRegisterModal();" href="javascript:void(0)">
-                    <i class="layui-icon layui-icon-username"></i>注册</a></li>
-            </ul>
-        </div>
+  
+  <!-- header -->
+  <div class="header_box">
+    <div class="header">  
+      <ul class="app-header">
+        <li class="app-header-menuicon">
+           <i class="layui-icon layui-icon-more-vertical"></i>
+        </li>
+      </ul>
+      <h1 class="logo">
+        <a href="#"> <img src="img/jsoso.svg"></a>
+      </h1>
+      <div class="nav"  style="visibility: visible">
+        <a href="case">案例</a>
+        <a href="service">服务</a>
+        <a href="about">关于</a>
+      </div> 
+      <ul class="layui-nav header-down-nav">
+        <li class="layui-nav-item"><a href="index" class="active">首页</a></li>
+        <li class="layui-nav-item"><a href="case">案例</a></li>
+        <li class="layui-nav-item"><a href="service">服务</a></li>
+        <li class="layui-nav-item"><a href="about">关于</a></li>
+      </ul> 
     </div>
-    <div class="modal fade login" id="loginModal">
-        <div class="modal-dialog login animated">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                    <h4 class="modal-title">Login with</h4>
-                </div>
-                <div class="modal-body">
-                    <div class="box">
-                        <div class="content">
-                            <div class="social">
-                                <a class="circle github" href="/auth/github">
-                                    <i class="fa fa-github fa-fw"></i>
-                                </a>
-                                <a id="google_login" class="circle google" href="/auth/google_oauth2">
-                                    <i class="fa fa-google-plus fa-fw"></i>
-                                </a>
-                                <a id="facebook_login" class="circle facebook" href="/auth/facebook">
-                                    <i class="fa fa-facebook fa-fw"></i>
-                                </a>
-                            </div>
-                            <div class="division">
-                                <div class="line l"></div>
-                                <span>or</span>
-                                <div class="line r"></div>
-                            </div>
-                            <div class="error"></div>
-                            <div class="form loginBox">
-                                <form method="post" action="/login" accept-charset="UTF-8">
-                                    <input id="email" class="form-control" type="text" placeholder="Email" name="email">
-                                    <input id="password" class="form-control" type="password" placeholder="Password" name="password">
-                                    <input class="btn btn-default btn-login" type="button" value="Login" onclick="loginAjax()">
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="content registerBox" style="display:none;">
-                            <div class="form">
-                                <form method="post" html="{:multipart=>true}" data-remote="true" action="/register" accept-charset="UTF-8">
-                                    <input id="email" class="form-control" type="text" placeholder="Email" name="email">
-                                    <input id="password" class="form-control" type="password" placeholder="Password" name="password">
-                                    <input id="password_confirmation" class="form-control" type="password" placeholder="Repeat Password" name="password_confirmation">
-                                    <input class="btn btn-default btn-register" type="submit" value="Create account" name="commit">
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <div class="forgot login-footer">
-                            <span>Looking to
-                                 <a href="javascript: showRegisterForm();">create an account</a>
-                            ?</span>
-                    </div>
-                    <div class="forgot register-footer" style="display:none">
-                        <span>Already have an account?</span>
-                        <a href="javascript: showLoginForm();">Login</a>
-                    </div>
-                </div>
+  </div>
+  <!-- end-header -->
+
+
+  <!-- content -->
+    <div class="content">
+      <div class="title">
+        <h5>欢迎您的到来</h5>
+        <h3>好礼品我们造,用心做好产品</h3>
+        <h4>We build good products and make good products.</h4>
+      </div>
+      <div class="tlinks">Collect from <a href="http://www.cssmoban.com/" >网页模板</a></div>
+      <div class="layui-carousel imgbox"  id="test1">
+        <div carousel-item  class="imgH">
+          <div><img style="width: 100%" src="../res/static/images/sy_banner1.jpg"></div>
+          <div><img style="width: 100%" src="../res/static/images/sy_banner1.jpg"></div>
+        </div>
+      </div>
+      <div class="prod-show">
+        <div class="layui-fluid">
+          <div class="row layui-col-space12 layui-clear">
+            <div class="layui-col-xs6 layui-col-sm6 layui-col-md3">
+              <div class="img-txt">
+                <img style="width: 100%;" src="../res/static/images/bottom-1.jpg" alt="">
+                <h3>花艺包装</h3>
+              </div>
             </div>
+            <div class="layui-col-xs6 layui-col-sm6 layui-col-md3">
+              <div class="img-txt">
+                <img style="width: 100%;" src="../res/static/images/bottom-2.jpg" alt="">
+                <h3>花艺包装</h3>
+              </div>
+            </div>
+            <div class="layui-col-xs6 layui-col-sm6 layui-col-md3">
+              <div class="img-txt">
+                <img style="width: 100%;" src="../res/static/images/bottom-3.jpg" alt="">
+                <h3>花艺包装</h3>
+              </div>
+            </div>
+            <div class="layui-col-xs6 layui-col-sm6 layui-col-md3">
+              <div class="img-txt">
+                <img style="width: 100%;" src="../res/static/images/bottom-4.jpg" alt="">
+                <h3>花艺包装</h3>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+      <div class="prod-descr">
+        <div class="layui-fluid">
+          <div class="layui-row">
+            <div class="item layui-clear">
+              <div class="layui-col-xs12 layui-col-sm6 layui-col-md6">
+                <img src="../res/static/images/sy_img5.jpg" class="left-img">
+              </div>
+              <div class="layui-col-xs12 layui-col-sm6 layui-col-md6">
+                <div class="text">
+                  <h3>优秀包装设计美学</h3>
+                  <p>本公司专门为您打造定制的商品包装。本公司专门为您打造定制的商品包装。</p>
+                  <a href="details.html">查看更多 ></a>
+                </div>
+              </div>
+              <div class="layui-col-xs12 layui-col-sm12 layui-col-md8 bot-img-box">
+                <div class="bot-img">
+                  <img src="../res/static/images/sy_img6.jpg">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="layui-row">
+            <div class="item layui-clear">
+              <div class="layui-col-xs12 layui-col-sm6 layui-col-md6">
+                <img src="../res/static/images/sy_img7.jpg" class="left-img">
+              </div>
+              <div class="layui-col-xs12 layui-col-sm6 layui-col-md6">
+                <div class="text">
+                  <h3>上等材质制作包装</h3>
+                  <p>本公司专门为您打造定制的商品包装。本公司专门为您打造定制的商品包装。</p>
+                  <a href="details.html">查看更多 ></a>
+                </div>
+              </div>
+              <div class="layui-col-xs12 layui-col-sm12 layui-col-md8 bot-img-box">
+                <div class="bot-img">
+                  <img src="../res/static/images/sy_img8.jpg">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="layui-row">
+            <div class="item layui-clear">
+              <div class="layui-col-xs12 layui-col-sm6 layui-col-md6">
+                <img src="../res/static/images/sy_img9.jpg" class="left-img">
+              </div>
+              <div class="layui-col-xs12 layui-col-sm6 layui-col-md6">
+                <div class="text">
+                  <h3>高级设备流水制作</h3>
+                  <p>本公司专门为您打造定制的商品包装。本公司专门为您打造定制的商品包装。</p>
+                  <a href="details.html">查看更多 ></a>
+                </div>
+              </div>
+              <div class="layui-col-xs12 layui-col-sm12 layui-col-md8 bot-img-box">
+                <div class="bot-img">
+                  <img src="../res/static/images/sy_img610.jpg">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="Partner">
+        <div class="title">
+          <h3>合作伙伴</h3>
+          <h4>cooperative partner</h4>
+        </div>
+        <div class="cont-box">
+          <div class="layui-fluid">
+            <div class="row layui-col-space20">
+              <div class="layui-col-xs6 layui-col-sm6 layui-col-md2">
+                <h2>待合作</h2>
+              </div>
+              <div class="layui-col-xs6 layui-col-sm6 layui-col-md2">
+                <h2>待合作</h2>
+              </div>
+              <div class="layui-col-xs6 layui-col-sm6 layui-col-md2">
+                <h2>待合作</h2>
+              </div>
+              <div class="layui-col-xs6 layui-col-sm6 layui-col-md2">
+                <h2>待合作</h2>
+              </div>
+              <div class="layui-col-xs6 layui-col-sm6 layui-col-md2">
+                <h2>待合作</h2>
+              </div>
+              <div class="layui-col-xs6 layui-col-sm6 layui-col-md2">
+                <h2>待合作</h2>
+              </div>
+              <div class="layui-col-xs6 layui-col-sm6 layui-col-md2">
+                <h2>待合作</h2>
+              </div>
+              <div class="layui-col-xs6 layui-col-sm6 layui-col-md2">
+                <h2>待合作</h2>
+              </div>
+              <div class="layui-col-xs6 layui-col-sm6 layui-col-md2">
+                <h2>待合作</h2>
+              </div>
+              <div class="layui-col-xs6 layui-col-sm6 layui-col-md2">
+                <h2>待合作</h2>
+              </div>
+              <div class="layui-col-xs6 layui-col-sm6 layui-col-md2">
+                <h2>待合作</h2>
+              </div>
+              <div class="layui-col-xs6 layui-col-sm6 layui-col-md2">
+                <h2>待合作</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-</div>
-<div class="nav">
-    <div id="nav">
-        <div class="nav_menu">
-            <ul>
-                <li>
-                    <a href="/">首页</a>
-                </li>
-                <li class="nav_hover">
-                    <a href="custom.html">真爱定制</a>
-                    <div class="nav_down">
-                        <div class="nav_main">
-                            <div class="nav_title">
-                                <h2>真爱定制</h2>
-                                <ul class="cate_menu">
-                                    <li>一句告白、一件信物、一生承诺。</li>
-                                    <li>与FORMYROSE（弗蒂斯）一起见证动人的爱情故事</li>
-                                </ul>
-                                <a href="custom.html" class="see_all">开始定制 &gt;&gt;</a>
-                            </div>
-                            <div class="cate_img">
-                                <a href="custom.html" class="imgblock"><img src="img/nav/des.jpg"></a>
-                            </div>
-                        </div>
-                    </div>
-                </li>
+  
+  <!-- end-content -->
 
-                <li class="nav_hover">
-                    <a href="ring.html">永生花</a>
-                    <div class="nav_down">
-                        <div class="nav_main">
-                            <div class="nav_title">
-                                <h2>玫瑰系统</h2>
-                                <ul class="cate_menu">
-                                    <li><a href="category-40-b0.html">音乐玫瑰</a></li>
-                                    <li><a href="category-48-b0.html">玫瑰球形</a></li>
-                                    <li><a href="category-49-b0.html">玫瑰圆盒</a></li>
-                                    <li><a href="category-50-b0.html">玫瑰方盒</a></li>
-                                    <li><a href="category-51-b0.html">玫瑰心形盒</a></li>
-                                </ul>
-                                <a href="ring.html" class="see_all">查看全部 &gt;&gt;</a>
-                            </div>
-                            <div class="cate_img">
-                                <a href="custom.html" class="imgblock nav-img"><img src="img/data/afficheimg/meigui.jpg"></a>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <a href="shop.html">精致生活</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</div>
-<div class="layui-carousel" id="banner" lay-anim="fade" lay-indicator="inside" lay-arrow="hover">
-    <div carousel-item="">
-        <div class="banner_img layui-this">
-            <a href="a.html" target="_blank"><img src="img/data/afficheimg/1.jpg" alt="214情人节"></a>
-        </div>
-        <div class="banner_img">
-            <a href="b.html" target="_blank"><img src="img/data/afficheimg/2.jpg" alt="彩宝系列"></a>
-        </div>
-        <div class="banner_img">
-            <a href="c.html" target="_blank"><img src="img/data/afficheimg/3.jpg" alt="新品上市"></a>
-        </div>
-        <div class="banner_img">
-            <a href="d.html" target="_blank"><img src="img/data/afficheimg/4.jpg" alt="更多作品"></a>
-        </div>
-        <div class="banner_img">
-            <a href="e.html" target="_blank"><img src="img/data/afficheimg/5.jpg" alt="遇见系列"></a>
-        </div>
-    </div>
-    <div class="layui-carousel-ind">
-        <ul>
-            <li class=""></li>
-            <li class=""></li>
-            <li class=""></li>
-            <li class=""></li>
-            <li class=""></li>
-        </ul>
-    </div>
-    <button class="layui-icon layui-carousel-arrow" lay-type="sub"></button>
-    <button class="layui-icon layui-carousel-arrow" lay-type="add"></button>
-</div>
-<div class="cust_design">
-    <div class="cust_title">
-        <h3>经典设计</h3>
-        <p>CHOICE OF MIND</p>
-    </div>
-    <div class="cust_more">
-        <a href="gift.html" target="_blank">探索更多+</a>
-    </div>
-
-    <ul class="cust_recomond">
-        <li>
-            <a href="goods-569.html" target="_blank"><img src="img/goods/goods-1.png" alt="海豚湾之恋"></a>
-            <h4>海豚湾之恋</h4>
-        </li>
-        <li>
-            <a href="goods-779.html" target="_blank"><img src="img/goods/goods-2.png" alt="为爱加冕"></a>
-            <h4>为爱加冕</h4>
-        </li>
-        <li>
-            <a href="goods-1139.html" target="_blank"><img src="img/goods/goods-3.png" alt="遇见幸福"></a>
-            <h4>遇见幸福</h4>
-        </li>
-        <li>
-            <a href="goods-1187.html" target="_blank"><img src="img/goods/goods-4.png" alt="KISS"></a>
-            <h4>KISS</h4>
-        </li>
-        <li>
-            <a href="goods-1193.html" target="_blank"><img src="img/goods/goods-5.png" alt="温情"></a>
-            <h4>温情</h4>
-        </li>
-    </ul>
-</div>
-<div class="index-footer" id="bottom-page"></div>
-<script src="js/jquery-3.2.1.js"></script>
-<script src="js/bootstrap.js"></script>
-<script src="layui/layui.js"></script>
-<script src="js/cookie.js"></script>
-<script src="js/login-register.js"></script>
-<script>
-    layui.use(['carousel', 'layer'], function(){
-        var carousel = layui.carousel;
-        $=layui.$;
-        //建造实例
-        carousel.render({
-            elem: '#banner'
-            ,width: '100%' //设置容器宽度
-            ,height: '550px'
-            ,arrow: 'always' //始终显示箭头
-            //,anim: 'updown' //切换动画方式
-        });
-        $("#bottom-page").load("../static-html/bottom.html");
+  <!-- footer -->
+  <div id="footer"></div>
+  <!-- end-footer -->
+  <script>
+  layui.use(['carousel','jquery','element'],function(){
+    var carousel = layui.carousel,$ = layui.$;
+      $("#footer").load("footer");
+      //建造实例
+    carousel.render({
+      elem: '#test1'
+      ,width: '100%' //设置容器宽度
+      ,arrow: 'always'
+      ,height:'auto'
+      //,anim: 'updown' //切换动画方式
     });
-</script>
+    $('.app-header-menuicon').on('click',function(){
+      $('.header-down-nav').toggleClass('down-nav')
+    })
+    var imgH = $('.imgbox div.layui-this').outerHeight();
+    $('.imgH').css('height',imgH+'px')
+    window.onresize = function () {
+      var imgH = $('.imgbox div.layui-this').outerHeight();
+      $('.imgH').css('height',imgH+'px')
+    };
+
+  });
+  </script>
 </body>
 </html>
