@@ -31,6 +31,19 @@ public class JedisUtil {
         }
     }
 
+
+    public String set(String key, String value, int expire) {
+        Jedis jedis = getResource();
+        try {
+            jedis.set(key, value, "NX", "EX", expire);
+            return value;
+        } finally {
+            jedis.close();
+        }
+    }
+
+
+
     public void expire(byte[] key, int i) {
         Jedis jedis = getResource();
         try {

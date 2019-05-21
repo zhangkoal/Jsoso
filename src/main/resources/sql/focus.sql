@@ -4,7 +4,11 @@ CREATE TABLE `tb_user` (
   `username` varchar(20) DEFAULT NULL,
   `realname` varchar(20) DEFAULT NULL,
   `password` varchar(20) DEFAULT NULL,
-	`status` int,
+  `phone` varchar(11) DEFAULT NULL,
+  `email` varchar(30) DEFAULT NULL,
+  `creatDate` TIMESTAMP(6),
+  `updateDate` TIMESTAMP(6),
+  `status` int,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 

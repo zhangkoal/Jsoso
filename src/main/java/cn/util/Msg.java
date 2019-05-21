@@ -7,8 +7,17 @@ public class Msg<T> {
     private Integer code;
     private String msg;
     private String url;
+    private Integer count;
     private T data;
+    private T extData;
 
+    public Integer getCount() {
+        return count;
+    }
+
+    public void setCount(Integer count) {
+        this.count = count;
+    }
 
     public String getUrl() {
         return url;
@@ -40,5 +49,13 @@ public class Msg<T> {
 
     public void setData(T data) {
         this.data = data;
+    }
+
+    public T getExtData() {
+        return extData;
+    }
+
+    public void setExtData(T extData) {
+        this.extData = extData;
     }
 }

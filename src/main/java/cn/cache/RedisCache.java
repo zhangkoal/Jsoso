@@ -13,7 +13,6 @@ import java.util.Set;
  * @author chengchenrui
  * @version Id: RedisCache.java, v 0.1 2018/6/29 1:15 chengchenrui Exp $$
  */
-@SuppressWarnings("unchecked")
 @Component
 public class RedisCache<K, V> implements Cache<K, V> {
 

@@ -4,6 +4,8 @@ package cn.entity;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.util.Date;
+
 @Getter
 @Setter
 public class TbUser implements java.io.Serializable{
@@ -12,6 +14,17 @@ public class TbUser implements java.io.Serializable{
     public String userName;
 
     public String password;
+
+    public String phone;
+
+    public Date creatDate;
+
+    public Date updateDate;
+
+    public String email;
+
+    public int status;
+
 
     private boolean rememberMe;
 
@@ -45,5 +58,45 @@ public class TbUser implements java.io.Serializable{
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
+    public Date getCreatDate() {
+        return creatDate;
+    }
+
+    public void setCreatDate(Date creatDate) {
+        this.creatDate = creatDate;
+    }
+
+    public Date getUpdateDate() {
+        return updateDate;
+    }
+
+    public void setUpdateDate(Date updateDate) {
+        this.updateDate = updateDate;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public int getStatus() {
+        return status;
+    }
+
+    public void setStatus(int status) {
+        this.status = status;
     }
 }

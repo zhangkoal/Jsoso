@@ -7,6 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.List;
+
 /**
  * @Author: sfpy
  * @Date: 5/14/2019 11:50 AM
@@ -62,6 +64,11 @@ public class IUserServiceImp implements IUserService {
     @Override
     public TbUser findByName(String userName) {
         return userMapper.findByName(userName);
+    }
+
+    @Override
+    public List<TbUser> getAllUserList() {
+        return userMapper.getAllUserList();
     }
 
 }

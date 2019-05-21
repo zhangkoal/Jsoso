@@ -5,6 +5,8 @@ import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
+
 /**
  * @Author: sfpy
  * @Date: 5/15/2019 11:28 AM
@@ -23,4 +25,7 @@ public interface UserMapper {
 
     @Select("SELECT * FROM tb_user t  WHERE t.userName=#{userName}")
     TbUser findByName(String userName);
+
+    @Select("SELECT * FROM tb_user t  WHERE t.status=10")
+    List<TbUser> getAllUserList();
 }

@@ -3,6 +3,8 @@ package cn.college.service.user;
 import cn.entity.TbUser;
 import org.springframework.stereotype.Component;
 
+import java.util.List;
+
 /**
  * @Author: sfpy
  * @Date: 5/14/2019 11:48 AM
@@ -39,6 +41,9 @@ public interface IUserService {
 
 
     TbUser findByName(String userName);
+
+    List<TbUser> getAllUserList();
+
 
 
 }
