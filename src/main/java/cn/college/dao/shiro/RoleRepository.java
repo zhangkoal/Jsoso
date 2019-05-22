@@ -1,5 +1,6 @@
 package cn.college.dao.shiro;
 
+import cn.entity.TbRole;
 import org.apache.ibatis.annotations.Select;
 import org.springframework.stereotype.Repository;
 
@@ -21,5 +22,7 @@ public interface RoleRepository{
     @Select("SELECT roleCode FROM V_user_role t  WHERE t.userName=#{userName}")
     String getRoleByUserName(String userName);
 
+    @Select("SELECT * FROM tb_role t  WHERE t.status=10")
+    List<TbRole> getRoleList();
 
 }

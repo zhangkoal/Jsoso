@@ -8,6 +8,7 @@
  * | 基于Layui http://www.layui.com/
  * +----------------------------------------------------------------------
  */
+
 layui.define(['jquery', 'form', 'layer', 'element'], function(exports) {
 	var $ = layui.jquery,
 		form = layui.form,

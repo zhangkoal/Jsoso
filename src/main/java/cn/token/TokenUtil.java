@@ -26,7 +26,7 @@ public class TokenUtil {
     public boolean  checkToken(String token) {
 
         Object value = cacheDataFactory.getCacheDateTime(RedisWorkspace.API_SPACE.getValue() + token);
-        if(EmptyUtils.isNotEmpty(value)) {
+        if(EmptyUtils.isNotEmpty(value) && !value.toString().equals("-2")) {
             return true;
         }
         return false;

@@ -151,7 +151,7 @@ body:before {
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
 }
-.register-form #email{
+.register-form #emailCodeInput{
     width: 140px;
 }
 .register-form #emailCode{

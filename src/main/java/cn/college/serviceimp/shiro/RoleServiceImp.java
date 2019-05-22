@@ -2,6 +2,7 @@ package cn.college.serviceimp.shiro;
 
 import cn.college.dao.shiro.RoleRepository;
 import cn.college.service.shiro.IRoleService;
+import cn.entity.TbRole;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -28,5 +29,11 @@ public class RoleServiceImp implements IRoleService {
     @Override
     public String getRoleByUserName(String userName) {
         return roleRepository.getRoleByUserName(userName);
+    }
+
+    @Override
+    public List<TbRole> getRoleList() {
+        List<TbRole> roleList = roleRepository.getRoleList();
+        return roleList;
     }
 }

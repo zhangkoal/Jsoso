@@ -1,5 +1,6 @@
 package cn.college.service.shiro;
 
+import cn.entity.TbRole;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
@@ -16,5 +17,8 @@ public interface IRoleService {
     List<String> getRolesByUserName(String userName);
 
     String getRoleByUserName(String userName);
+
+    List<TbRole> getRoleList();
+
 
 }
