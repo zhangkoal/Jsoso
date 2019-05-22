@@ -63,3 +63,8 @@ CREATE VIEW v_user_role AS
 		LEFT JOIN tb_role role on role.id = link.roleid and role.status = 10;
 
 
+-- ----------------------------
+-- Table 订单表
+-- ----------------------------
+
+

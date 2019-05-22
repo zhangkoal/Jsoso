@@ -75,11 +75,55 @@ public class AdminController {
     }
 
     /**
-     * add-admin
+     * order-list
      */
     @RequestMapping(value = "pages/order/list.html",method = RequestMethod.GET)
     public String orderList(HttpServletRequest request) {
         return "/admin/pages/order/list";
     }
+
+
+    /**
+     * member-list
+     */
+    @RequestMapping(value = "pages/member/list.html",method = RequestMethod.GET)
+    public String memberList(HttpServletRequest request) {
+        return "/admin/pages/member/list";
+    }
+
+    /**
+     * member-add
+     */
+    @RequestMapping(value = "pages/member/add.html",method = RequestMethod.GET)
+    public String memberAdd(HttpServletRequest request) {
+        return "/admin/pages/member/add";
+    }
+
+    /**
+     * member-add
+     */
+    @RequestMapping(value = "pages/member/addInput.html",method = RequestMethod.GET)
+    public String memberAddInput(HttpServletRequest request) {
+        return "/admin/pages/member/addInput";
+    }
+
+    /**
+     * member-del
+     */
+    @RequestMapping(value = "pages/member/del.html",method = RequestMethod.GET)
+    public String memberDelInput(HttpServletRequest request) {
+        return "/admin/pages/member/del";
+    }
+
+    /**
+     * member-edit
+     */
+    @RequestMapping(value = "pages/member/edit.html",method = RequestMethod.GET)
+    public String memberEditnput(HttpServletRequest request) {
+        return "/admin/pages/member/edit";
+    }
+
+
+
 
 }
