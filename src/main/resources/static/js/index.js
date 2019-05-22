@@ -19,6 +19,7 @@ $('#login').click(function () {
             if(data.code == -1) {
                 alert(data.msg);
             } else {
+                setCookie("access_token", data.extData);
                 window.location.href= data.url;
             }
         },

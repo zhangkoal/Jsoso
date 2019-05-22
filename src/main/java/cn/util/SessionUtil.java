@@ -5,14 +5,12 @@ import cn.constant.RedisType;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
  * 对于用户的每一次请求更新用的session时间
  */
-@Controller
 @Component
 public class SessionUtil {
 

@@ -8,8 +8,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 import java.util.List;
 
 /**
@@ -19,16 +17,14 @@ import java.util.List;
  * @Version 1.0
  */
 @RestController
-@RequestMapping(value = "adminData", method = RequestMethod.GET)
+@RequestMapping(value = "/api/adminData", method = RequestMethod.GET)
 public class OpController {
 
     @Autowired
     private IUserService userService;
 
     @RequestMapping("adminList")
-    public Msg getAdminList(HttpServletRequest request, HttpServletResponse response) {
-        System.out.println(response.getHeader("token"));
-        System.out.println(request.getHeader("token"));
+    public Msg getAdminList() {
         Msg msg = new Msg();
         List<TbUser> userDataList = userService.getAllUserList();
         msg.setCode(0);

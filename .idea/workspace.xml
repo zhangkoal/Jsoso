@@ -1,138 +1,390 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5afed17d-53f5-4b18-8c41-1156349e369f" name="Default" comment="后台管理代码添加">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cn/college/controller/APIController/ApiController.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cn/college/controller/admin/adminMg/OpController.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cn/constant/Constants.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cn/constant/RedisWorkspace.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cn/filter/CorsConf.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/js/date-format.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/layui/css/layui.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/layui/css/layui.mobile.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/layui/css/modules/code.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/layui/css/modules/laydate/default/laydate.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/layui/css/modules/layer/default/icon-ext.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/layui/css/modules/layer/default/icon.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/layui/css/modules/layer/default/layer.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/layui/css/modules/layer/default/loading-0.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/layui/css/modules/layer/default/loading-1.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/layui/css/modules/layer/default/loading-2.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/layui/font/iconfont.eot" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/layui/font/iconfont.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/layui/font/iconfont.ttf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/layui/font/iconfont.woff" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/layui/images/face/0.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/layui/images/face/1.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/layui/images/face/10.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/layui/images/face/11.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/layui/images/face/12.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/layui/images/face/13.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/layui/images/face/14.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/layui/images/face/15.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/layui/images/face/16.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/layui/images/face/17.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/layui/images/face/18.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/layui/images/face/19.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/layui/images/face/2.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/layui/images/face/20.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/layui/images/face/21.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/layui/images/face/22.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/layui/images/face/23.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/layui/images/face/24.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/layui/images/face/25.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/layui/images/face/26.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/layui/images/face/27.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/layui/images/face/28.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/layui/images/face/29.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/layui/images/face/3.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/layui/images/face/30.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/layui/images/face/31.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/layui/images/face/32.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/layui/images/face/33.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/layui/images/face/34.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/layui/images/face/35.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/layui/images/face/36.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/layui/images/face/37.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/layui/images/face/38.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/layui/images/face/39.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/layui/images/face/4.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/layui/images/face/40.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/layui/images/face/41.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/layui/images/face/42.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/layui/images/face/43.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/layui/images/face/44.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/layui/images/face/45.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/layui/images/face/46.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/layui/images/face/47.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/layui/images/face/48.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/layui/images/face/49.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/layui/images/face/5.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/layui/images/face/50.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/layui/images/face/51.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/layui/images/face/52.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/layui/images/face/53.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/layui/images/face/54.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/layui/images/face/55.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/layui/images/face/56.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/layui/images/face/57.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/layui/images/face/58.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/layui/images/face/59.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/layui/images/face/6.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/layui/images/face/60.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/layui/images/face/61.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/layui/images/face/62.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/layui/images/face/63.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/layui/images/face/64.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/layui/images/face/65.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/layui/images/face/66.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/layui/images/face/67.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/layui/images/face/68.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/layui/images/face/69.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/layui/images/face/7.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/layui/images/face/70.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/layui/images/face/71.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/layui/images/face/8.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/layui/images/face/9.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/layui/lay/modules/carousel.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/layui/lay/modules/code.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/layui/lay/modules/colorpicker.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/layui/lay/modules/element.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/layui/lay/modules/flow.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/layui/lay/modules/form.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/layui/lay/modules/jquery.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/layui/lay/modules/laydate.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/layui/lay/modules/layedit.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/layui/lay/modules/layer.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/layui/lay/modules/laypage.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/layui/lay/modules/laytpl.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/layui/lay/modules/mobile.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/layui/lay/modules/rate.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/layui/lay/modules/slider.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/layui/lay/modules/table.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/layui/lay/modules/tree.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/layui/lay/modules/upload.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/layui/lay/modules/util.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/layui/layui.all.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/layui/layui.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/cn/sql/Consumer.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/cn/sql/Producer.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/test/cn/sql/TestMain.java" />
+    <list default="true" id="5afed17d-53f5-4b18-8c41-1156349e369f" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cn/filter/APIFilter.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cn/token/TokenUtil.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/css/font.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/css/weadmin.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/css/weadmin.less" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/iconfont.eot" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/iconfont.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/iconfont.ttf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/iconfont.woff" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/images/aiwrap.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/images/bg.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/images/mapico1.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/images/mapico2.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/images/mapico3.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/images/mapico4.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/js/admin.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/js/eleDel.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/js/extends/tabmenu.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/js/weadmin.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/css/layui.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/css/layui.mobile.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/css/modules/code.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/css/modules/laydate/default/laydate.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/css/modules/layer/default/icon-ext.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/css/modules/layer/default/icon.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/css/modules/layer/default/layer.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/css/modules/layer/default/loading-0.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/css/modules/layer/default/loading-1.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/css/modules/layer/default/loading-2.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/font/iconfont.eot" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/font/iconfont.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/font/iconfont.ttf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/font/iconfont.woff" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/0.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/1.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/10.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/11.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/12.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/13.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/14.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/15.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/16.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/17.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/18.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/19.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/2.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/20.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/21.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/22.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/23.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/24.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/25.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/26.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/27.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/28.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/29.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/3.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/30.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/31.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/32.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/33.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/34.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/35.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/36.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/37.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/38.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/39.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/4.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/40.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/41.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/42.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/43.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/44.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/45.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/46.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/47.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/48.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/49.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/5.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/50.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/51.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/52.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/53.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/54.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/55.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/56.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/57.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/58.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/59.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/6.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/60.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/61.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/62.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/63.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/64.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/65.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/66.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/67.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/68.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/69.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/7.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/70.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/71.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/8.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/9.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/lay/modules/carousel.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/lay/modules/code.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/lay/modules/colorpicker.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/lay/modules/element.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/lay/modules/flow.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/lay/modules/form.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/lay/modules/jquery.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/lay/modules/laydate.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/lay/modules/layedit.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/lay/modules/layer.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/lay/modules/laypage.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/lay/modules/laytpl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/lay/modules/mobile.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/lay/modules/rate.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/lay/modules/slider.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/lay/modules/table.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/lay/modules/tree.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/lay/modules/upload.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/lay/modules/util.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/lay/treeGird.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/layui.all.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/layui.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/css/layui.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/css/layui.mobile.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/css/modules/code.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/css/modules/laydate/default/laydate.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/css/modules/layer/default/icon-ext.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/css/modules/layer/default/icon.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/css/modules/layer/default/layer.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/css/modules/layer/default/loading-0.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/css/modules/layer/default/loading-1.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/css/modules/layer/default/loading-2.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/font/iconfont.eot" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/font/iconfont.svg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/font/iconfont.ttf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/font/iconfont.woff" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/0.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/1.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/10.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/11.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/12.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/13.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/14.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/15.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/16.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/17.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/18.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/19.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/2.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/20.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/21.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/22.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/23.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/24.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/25.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/26.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/27.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/28.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/29.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/3.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/30.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/31.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/32.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/33.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/34.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/35.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/36.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/37.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/38.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/39.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/4.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/40.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/41.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/42.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/43.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/44.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/45.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/46.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/47.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/48.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/49.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/5.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/50.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/51.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/52.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/53.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/54.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/55.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/56.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/57.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/58.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/59.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/6.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/60.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/61.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/62.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/63.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/64.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/65.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/66.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/67.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/68.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/69.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/7.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/70.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/71.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/8.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/9.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/lay/modules/carousel.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/lay/modules/code.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/lay/modules/element.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/lay/modules/flow.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/lay/modules/form.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/lay/modules/jquery.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/lay/modules/laydate.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/lay/modules/layedit.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/lay/modules/layer.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/lay/modules/laypage.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/lay/modules/laytpl.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/lay/modules/mobile.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/lay/modules/rate.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/lay/modules/table.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/lay/modules/tree.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/lay/modules/upload.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/lay/modules/util.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/lay/treeGird.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/layui.all.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/layui.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/pages/404.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/pages/admin/add.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/pages/admin/cate.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/pages/admin/edit.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/pages/admin/list.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/pages/admin/role-add.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/pages/admin/role.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/pages/admin/rule.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/pages/article/add.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/pages/article/category-add.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/pages/article/category-edit.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/pages/article/category-edit.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/pages/article/category.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/pages/article/category.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/pages/article/list.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/pages/article/list.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/pages/article/复制 list.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/pages/echarts/echarts1.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/pages/echarts/echarts2.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/pages/echarts/echarts3.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/pages/echarts/echarts4.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/pages/echarts/echarts5.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/pages/echarts/echarts6.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/pages/echarts/echarts7.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/pages/echarts/echarts8.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/pages/echarts/echarts9.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/pages/member/add.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/pages/member/add2.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/pages/member/addInput.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/pages/member/del.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/pages/member/edit.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/pages/member/list.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/pages/member/list2.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/pages/member/password.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/pages/order/add.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/pages/order/list.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/pages/welcome.html" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/cache/JedisUtil.java" afterPath="$PROJECT_DIR$/src/main/java/cn/cache/JedisUtil.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/cache/RedisCache.java" afterPath="$PROJECT_DIR$/src/main/java/cn/cache/RedisCache.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/college/controller/user/LoginController.java" afterPath="$PROJECT_DIR$/src/main/java/cn/college/controller/user/LoginController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/college/dao/user/UserMapper.java" afterPath="$PROJECT_DIR$/src/main/java/cn/college/dao/user/UserMapper.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/college/service/user/IUserService.java" afterPath="$PROJECT_DIR$/src/main/java/cn/college/service/user/IUserService.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/college/serviceimp/user/IUserServiceImp.java" afterPath="$PROJECT_DIR$/src/main/java/cn/college/serviceimp/user/IUserServiceImp.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/entity/TbUser.java" afterPath="$PROJECT_DIR$/src/main/java/cn/entity/TbUser.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/util/Msg.java" afterPath="$PROJECT_DIR$/src/main/java/cn/util/Msg.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/sql/focus.sql" afterPath="$PROJECT_DIR$/src/main/resources/sql/focus.sql" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/_header.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/_header.html" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/admin-list.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/admin-list.html" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/Application.java" afterPath="$PROJECT_DIR$/src/main/java/cn/Application.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/college/controller/admin/AdminController.java" afterPath="$PROJECT_DIR$/src/main/java/cn/college/controller/admin/AdminController.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/college/controller/admin/adminMg/OpController.java" afterPath="$PROJECT_DIR$/src/main/java/cn/college/controller/admin/adminMg/OpController.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/filter/CorsConf.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/util/SessionUtil.java" afterPath="$PROJECT_DIR$/src/main/java/cn/util/SessionUtil.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap-theme.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap-theme.css.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap-theme.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap-theme.min.css.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap.css.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap.min.css.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/font-awesome.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/hat.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/index.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/login-register.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/login.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/login2.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/main-index.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/style.css" afterPath="$PROJECT_DIR$/src/main/resources/static/css/style.css" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/theme.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/fonts/glyphicons-halflings-regular.eot" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/fonts/glyphicons-halflings-regular.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/fonts/glyphicons-halflings-regular.woff" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/fonts/glyphicons-halflings-regular.woff2" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/data/afficheimg/1.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/data/afficheimg/2.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/data/afficheimg/3.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/data/afficheimg/4.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/data/afficheimg/5.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/data/afficheimg/meigui.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/login.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/app.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/bootstrap.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/bootstrap.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/date-format.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/index.js" afterPath="$PROJECT_DIR$/src/main/resources/static/js/index.js" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/jquery-3.2.1.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/jquery-3.2.1.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/jquery-3.2.1.slim.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/session.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/404.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/LICENSE.md" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/_blank.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/_footer.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/_header.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/_menu.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/_meta.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/admin-add.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/admin-list.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/admin-password-edit.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/admin-permission.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/admin-role-add.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/admin-role.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/article-add.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/article-class-edit.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/article-class.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/article-list.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/change-password.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/charts-1.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/charts-2.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/charts-3.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/charts-4.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/charts-5.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/charts-6.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/charts-7.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/codeing.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/favicon.ico" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/feedback-list.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/index-2.html" afterPath="" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/index.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/index.html" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/login.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/login.html" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/logo.psd" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/member-add.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/member-del.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/member-list.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/member-record-browse.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/member-record-download.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/member-record-share.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/member-show.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/picture-add.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/picture-list.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/picture-show.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/product-add.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/product-brand.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/product-category-add.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/product-category.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/product-list.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/record-browse.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/record-download.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/record-share.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/system-base.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/system-category-add.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/system-category.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/system-data.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/system-log.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/system-shielding.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/user-add.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/user-list.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/user-password-edit.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/user-show.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/welcome.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/error/500.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/error/500.html" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/footer.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/shiro/home.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/shiro/login.html" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -164,50 +416,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="OpController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cn/college/controller/admin/adminMg/OpController.java">
+      <file leaf-file-name="AdminController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cn/college/controller/admin/AdminController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="413">
-              <caret line="33" column="19" lean-forward="false" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="admin-list.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin/admin-list.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="35" column="58" lean-forward="true" selection-start-line="35" selection-start-column="58" selection-end-line="35" selection-end-column="58" />
+            <state relative-caret-position="437">
+              <caret line="72" column="22" lean-forward="false" selection-start-line="72" selection-start-column="22" selection-end-line="72" selection-end-column="22" />
               <folding>
-                <marker date="1558442680057" expanded="true" signature="5058:5078" ph="..." />
-                <marker date="1558442680057" expanded="true" signature="5104:5112" ph="&amp;##xe615;" />
-                <marker date="1558442680057" expanded="true" signature="5533:5553" ph="..." />
-                <marker date="1558442680057" expanded="true" signature="5579:5587" ph="&amp;##xe631;" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoginController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cn/college/controller/user/LoginController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="58" column="7" lean-forward="true" selection-start-line="58" selection-start-column="7" selection-end-line="58" selection-end-column="7" />
-              <folding>
-                <element signature="e#1654#1673#1" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ApiController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cn/college/controller/APIController/ApiController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="49" column="10" lean-forward="false" selection-start-line="49" selection-start-column="10" selection-end-line="49" selection-end-column="10" />
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#947#948#0" expanded="true" />
+                <element signature="e#984#985#0" expanded="true" />
+                <element signature="e#1152#1153#0" expanded="true" />
+                <element signature="e#1197#1198#0" expanded="true" />
+                <element signature="e#1370#1371#0" expanded="true" />
+                <element signature="e#1418#1419#0" expanded="true" />
+                <element signature="e#1591#1592#0" expanded="true" />
+                <element signature="e#1639#1640#0" expanded="true" />
+                <element signature="e#1809#1810#0" expanded="true" />
+                <element signature="e#1856#1857#0" expanded="true" />
+                <element signature="e#2028#2029#0" expanded="true" />
+                <element signature="e#2076#2077#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -216,54 +442,51 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3549">
-              <caret line="46" column="27" lean-forward="true" selection-start-line="46" selection-start-column="27" selection-end-line="46" selection-end-column="27" />
+            <state relative-caret-position="3825">
+              <caret line="296" column="22" lean-forward="false" selection-start-line="296" selection-start-column="22" selection-end-line="296" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Msg.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/cn/util/Msg.java">
+      <file leaf-file-name="list.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin/pages/admin/list.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="565">
-              <caret line="53" column="27" lean-forward="false" selection-start-line="53" selection-start-column="27" selection-end-line="53" selection-end-column="27" />
+            <state relative-caret-position="352">
+              <caret line="61" column="87" lean-forward="false" selection-start-line="61" selection-start-column="87" selection-end-line="61" selection-end-column="87" />
               <folding>
-                <element signature="e#912#913#0" expanded="true" />
-                <element signature="e#944#945#0" expanded="true" />
-                <element signature="e#1003#1004#0" expanded="true" />
-                <element signature="e#1044#1045#0" expanded="true" />
-                <element signature="e#1082#1083#0" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#i#0;n#a#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
+      <file leaf-file-name="edit.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin/pages/admin/edit.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-766">
-              <caret line="35" column="22" lean-forward="false" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
+            <state relative-caret-position="-342">
+              <caret line="98" column="35" lean-forward="false" selection-start-line="98" selection-start-column="35" selection-end-line="98" selection-end-column="35" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/login.html">
+      <file leaf-file-name="eleDel.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/eleDel.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="39" column="27" lean-forward="false" selection-start-line="39" selection-start-column="27" selection-end-line="39" selection-end-column="27" />
+            <state relative-caret-position="209">
+              <caret line="65" column="17" lean-forward="false" selection-start-line="65" selection-start-column="11" selection-end-line="65" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/index.js">
+      <file leaf-file-name="admin.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/admin.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="17" column="31" lean-forward="false" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="31" />
+            <state relative-caret-position="5567">
+              <caret line="302" column="22" lean-forward="false" selection-start-line="302" selection-start-column="11" selection-end-line="302" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -284,16 +507,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>druid</find>
-      <find>datasource</find>
-      <find>driverClassName</find>
-      <find>poolPreparedStatements</find>
-      <find>userlogin</find>
-      <find>drui</find>
-      <find>shiro.version</find>
-      <find>resource</find>
-      <find>authorityExtendMapper</find>
-      <find>JPA</find>
       <find>CLASS</find>
       <find>classic</find>
       <find>exclusion</find>
@@ -301,7 +514,6 @@
       <find>isAccessAllowed</find>
       <find>notLogin</find>
       <find>securityManager</find>
-      <find>sid</find>
       <find>资讯</find>
       <find>admin</find>
       <find>html</find>
@@ -314,6 +526,17 @@
       <find>aboutHui</find>
       <find>rememberMeManager</find>
       <find>token</find>
+      <find>sid</find>
+      <find>04 ()</find>
+      <find>layui.js</find>
+      <find>welcom</find>
+      <find>dell</find>
+      <find>delAll</find>
+      <find>index</find>
+      <find>/</find>
+      <find>admin.js</find>
+      <find>WeAdminShow</find>
+      <find>login</find>
     </findStrings>
     <replaceStrings>
       <replace>authorityRepository</replace>
@@ -336,34 +559,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/resources/templates/admin/article-add.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/admin/article-class.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/admin/article-class-edit.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/admin/change-password.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/admin/member-show.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/admin/picture-add.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/admin/user-list.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/admin/user-add.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/admin/user-password-edit.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/admin/user-show.html" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/college/controller/admin/article/ArticleController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/admin/member-del.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/admin/member-add.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/admin/member-record-browse.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/admin/member-record-download.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/admin/member-record-share.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/static/admin/static/h-ui.admin/js/H-ui.admin.js" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/admin/member-list.html" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/admin/admin-role.html" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/college/controller/admin/AdminController.java" />
-        <option value="$PROJECT_DIR$/src/test/cn/sql/Consumer.java" />
-        <option value="$PROJECT_DIR$/src/test/cn/sql/Producer.java" />
-        <option value="$PROJECT_DIR$/src/test/cn/sql/TestMain.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/admin/index.html" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/entity/TbUser.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/sql/focus.sql" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/college/dao/user/UserMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/college/service/user/IUserService.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/college/serviceimp/user/IUserServiceImp.java" />
         <option value="$PROJECT_DIR$/src/main/resources/static/js/date-format.js" />
         <option value="$PROJECT_DIR$/src/main/java/cn/util/JwtUtil.java" />
@@ -381,12 +576,40 @@
         <option value="$PROJECT_DIR$/src/main/java/cn/filter/CorsFilter.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/filter/CorsConf.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/filter/RolesOrFilter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/college/controller/admin/adminMg/OpController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/admin/admin-list.html" />
         <option value="$PROJECT_DIR$/src/main/java/cn/college/controller/APIController/ApiController.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/util/Msg.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/college/controller/user/LoginController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/js/index.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/login.html" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/util/SessionUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/college/controller/admin/adminMg/OpController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/Application.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/token/TokenUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/filter/APIFilter.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/admin/admin-list.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/css/style.css" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/css/weadmin.less" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/admin/pages/member/list.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/admin/pages/member/del.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/admin/pages/member/edit.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/admin/pages/member/addInput.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/error/500.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/admin/login.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/admin/pages/admin/role.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/admin/pages/admin/role-add.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/admin/pages/admin/rule.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/admin/pages/admin/add.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/admin/pages/admin/cate.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/admin/pages/404.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/admin/pages/welcome.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/js/admin.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/index.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/admin/index.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/static/js/eleDel.js" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/admin/pages/admin/list.html" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/college/controller/admin/AdminController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/admin/pages/admin/edit.html" />
       </list>
     </option>
   </component>
@@ -470,12 +693,87 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="Jsoso" type="b2602c69:ProjectViewProjectNode" />
               <item name="Jsoso" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Jsoso" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Jsoso" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Jsoso" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Jsoso" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Jsoso" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Jsoso" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Jsoso" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Jsoso" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Jsoso" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Jsoso" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Jsoso" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Jsoso" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Jsoso" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Jsoso" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Jsoso" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Jsoso" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Jsoso" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Jsoso" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Jsoso" type="b2602c69:ProjectViewProjectNode" />
@@ -487,8 +785,6 @@
         </subPane>
       </pane>
       <pane id="AndroidView" />
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -504,10 +800,11 @@
     <property name="RequestMappingsPanelOrder2" value="2" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SearchEverywhereHistoryKey" value="user&#9;FILE&#9;file://D:/workspace/idea_jsoso_finally/Jsoso/src/main/java/cn/college/serviceimp/user" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../springbootOauth" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../layadmin" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -521,11 +818,11 @@
       <recent name="cn.college.controller.user" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\workspace\idea_jsoso_finally\Jsoso\src\main\java\cn\token" />
+      <recent name="D:\workspace\idea_jsoso_finally\Jsoso\src\main\resources\static\fonts" />
       <recent name="D:\workspace\idea_jsoso_finally\Jsoso\src\main\resources\static" />
-      <recent name="D:\workspace\idea_jsoso_finally\Jsoso\src\main\resources\static\admin" />
+      <recent name="D:\workspace\idea_jsoso_finally\Jsoso\src\main\resources\templates" />
       <recent name="D:\workspace\idea_jsoso_finally\Jsoso\src\main\resources\templates\admin" />
-      <recent name="D:\workspace\idea_jsoso_finally\Jsoso\src\main\resources\static\static" />
+      <recent name="D:\workspace\idea_jsoso_finally\Jsoso\src\main\resources\static\css" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -814,7 +1111,8 @@
       <workItem from="1558263197905" duration="595000" />
       <workItem from="1558325334569" duration="10245000" />
       <workItem from="1558406847663" duration="3510000" />
-      <workItem from="1558411411317" duration="23404000" />
+      <workItem from="1558411411317" duration="37891000" />
+      <workItem from="1558488721346" duration="2548000" />
     </task>
     <task id="LOCAL-00001" summary="添加redis">
       <created>1523804139087</created>
@@ -921,7 +1219,14 @@
       <option name="project" value="LOCAL" />
       <updated>1558087988447</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="后台管理代码添加">
+      <created>1558444024743</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1558444024744</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -957,7 +1262,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="273723000" />
+    <option name="totallyTimeSpent" value="290758000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -971,7 +1276,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22318527" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38678223" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -995,40 +1300,6 @@
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13113007" sideWeight="0.21052632" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23081024" sideWeight="0.7894737" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.248104" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3726977" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13113007" sideWeight="0.21052632" order="0" side_tool="true" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1924307" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
-      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -1071,7 +1342,7 @@
           <option name="timeStamp" value="134" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="164" />
+      <option name="time" value="174" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1109,306 +1380,322 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://G:/m2/repository/org/apache/shiro/shiro-core/1.4.0/shiro-core-1.4.0.jar!/org/apache/shiro/subject/Subject.class">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin/pages/admin/role-add.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="58" column="9" lean-forward="false" selection-start-line="58" selection-start-column="9" selection-end-line="58" selection-end-column="9" />
-          <folding />
+        <state relative-caret-position="57">
+          <caret line="84" column="35" lean-forward="false" selection-start-line="84" selection-start-column="35" selection-end-line="84" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/college/controller/user/GuestController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin/pages/admin/rule.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="26" column="34" lean-forward="true" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
-          <folding>
-            <element signature="e#625#626#0" expanded="false" />
-            <element signature="e#682#683#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="442">
+          <caret line="110" column="29" lean-forward="false" selection-start-line="110" selection-start-column="29" selection-end-line="110" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://G:/m2/repository/redis/clients/jedis/2.9.0/jedis-2.9.0-sources.jar!/redis/clients/jedis/BinaryJedis.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin/pages/admin/add.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="1755" column="17" lean-forward="false" selection-start-line="1755" selection-start-column="17" selection-end-line="1755" selection-end-column="17" />
-          <folding />
+        <state relative-caret-position="-223">
+          <caret line="95" column="39" lean-forward="false" selection-start-line="95" selection-start-column="39" selection-end-line="95" selection-end-column="39" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://G:/m2/repository/redis/clients/jedis/2.9.0/jedis-2.9.0-sources.jar!/redis/clients/jedis/JedisCommands.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin/pages/admin/cate.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="13" column="25" lean-forward="true" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
-          <folding />
+        <state relative-caret-position="442">
+          <caret line="82" column="25" lean-forward="false" selection-start-line="82" selection-start-column="25" selection-end-line="82" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://G:/m2/repository/redis/clients/jedis/2.9.0/jedis-2.9.0-sources.jar!/redis/clients/util/SafeEncoder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="29" column="38" lean-forward="true" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://G:/m2/repository/redis/clients/jedis/2.9.0/jedis-2.9.0-sources.jar!/redis/clients/jedis/Protocol.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="86" column="22" lean-forward="false" selection-start-line="86" selection-start-column="22" selection-end-line="86" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://G:/m2/repository/redis/clients/jedis/2.9.0/jedis-2.9.0-sources.jar!/redis/clients/jedis/Connection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="126" column="20" lean-forward="true" selection-start-line="126" selection-start-column="20" selection-end-line="126" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://G:/m2/repository/redis/clients/jedis/2.9.0/jedis-2.9.0-sources.jar!/redis/clients/jedis/BinaryClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="1114" column="11" lean-forward="false" selection-start-line="1114" selection-start-column="11" selection-end-line="1114" selection-end-column="11" />
-          <folding>
-            <element signature="e#2770#2771#0" expanded="false" />
-            <element signature="e#2816#2817#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://G:/m2/repository/redis/clients/jedis/2.9.0/jedis-2.9.0-sources.jar!/redis/clients/jedis/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="846" column="6" lean-forward="false" selection-start-line="846" selection-start-column="6" selection-end-line="846" selection-end-column="6" />
-          <folding>
-            <element signature="e#1286#1287#0" expanded="false" />
-            <element signature="e#1351#1352#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://G:/m2/repository/redis/clients/jedis/2.9.0/jedis-2.9.0-sources.jar!/redis/clients/jedis/Jedis.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="3034" column="12" lean-forward="false" selection-start-line="3034" selection-start-column="12" selection-end-line="3034" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/constant/CommonStatus.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/constant/Constants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="28" lean-forward="false" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/cache/RedisCache.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="21" column="31" lean-forward="false" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/cache/RedisCacheManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/cfg/CacheDataFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="15" column="29" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/cfg/JedisCfg.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="18" column="1" lean-forward="false" selection-start-line="18" selection-start-column="1" selection-end-line="20" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/token/TokenManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="29" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/token/impl/RedisTokenManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="50" column="54" lean-forward="false" selection-start-line="50" selection-start-column="54" selection-end-line="50" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/constant/RedisWorkspace.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin/pages/404.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
-          <caret line="9" column="29" lean-forward="false" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
-          <folding>
-            <element signature="e#343#344#0" expanded="false" />
-            <element signature="e#368#369#0" expanded="false" />
-            <element signature="e#400#401#0" expanded="false" />
-            <element signature="e#428#429#0" expanded="false" />
-          </folding>
+          <caret line="9" column="42" lean-forward="true" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/cache/JedisUtil.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/weadmin.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="34" column="21" lean-forward="false" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="21" />
-          <folding>
-            <element signature="e#437#438#0" expanded="false" />
-            <element signature="e#480#481#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/druid/DruidConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+        <state relative-caret-position="-1767">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/filter/JWTAuthenticationFilter.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/extends/tabmenu.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-570">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin/pages/welcome.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4541">
+          <caret line="374" column="29" lean-forward="false" selection-start-line="374" selection-start-column="29" selection-end-line="374" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="17" column="13" lean-forward="false" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-275">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://G:/m2/repository/org/springframework/boot/spring-boot/2.0.0.RELEASE/spring-boot-2.0.0.RELEASE-sources.jar!/org/springframework/boot/web/servlet/error/ErrorController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="28" column="17" lean-forward="false" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/college/controller/error/MainsiteErrorController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
-          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
+          <caret line="12" column="31" lean-forward="false" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
+          <folding>
+            <element signature="e#423#424#0" expanded="true" />
+            <element signature="e#462#463#0" expanded="true" />
+            <element signature="e#512#513#0" expanded="true" />
+            <element signature="e#545#546#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/error/500.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="178" column="29" lean-forward="false" selection-start-line="178" selection-start-column="29" selection-end-line="178" selection-end-column="29" />
-          <folding />
+        <state relative-caret-position="347">
+          <caret line="45" column="8" lean-forward="true" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://G:/m2/repository/org/apache/shiro/shiro-web/1.4.0/shiro-web-1.4.0.jar!/org/apache/shiro/web/filter/AccessControlFilter.class">
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/filter/APIFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="608">
-          <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="179">
+          <caret line="25" column="13" lean-forward="false" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/filter/SessionFilter.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/filter/RolesOrFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="22" column="13" lean-forward="false" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://G:/m2/repository/org/apache/shiro/shiro-core/1.4.0/shiro-core-1.4.0.jar!/org/apache/shiro/authz/AuthorizationInfo.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-          <folding />
+        <state relative-caret-position="65">
+          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/shiro/CustomReaml.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="59" column="20" lean-forward="false" selection-start-line="59" selection-start-column="17" selection-end-line="59" selection-end-column="28" />
-          <folding />
+        <state relative-caret-position="179">
+          <caret line="25" column="13" lean-forward="false" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/token/TokenUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="65">
+          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/listener/ShiroSessionListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-418">
+          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/handle/ExceptionHandle.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        <state relative-caret-position="95">
+          <caret line="9" column="2" lean-forward="true" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/college/controller/admin/adminMg/OpController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="20" column="13" lean-forward="false" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/emailTemp.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/footer.html" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="874">
+          <caret line="46" column="21" lean-forward="false" selection-start-line="46" selection-start-column="16" selection-end-line="46" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/service.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/shiro/login.html" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/shiro/home.html" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" column="17" lean-forward="false" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/college/controller/APIController/ApiController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-49">
+          <caret line="26" column="13" lean-forward="false" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/college/controller/mail/MailController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/college/controller/user/UrlController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="23" column="34" lean-forward="false" selection-start-line="23" selection-start-column="29" selection-end-line="23" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/college/controller/user/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1026">
+          <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-703">
+          <caret line="8" column="54" lean-forward="false" selection-start-line="8" selection-start-column="54" selection-end-line="8" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://G:/m2/repository/org/springframework/spring-web/5.0.4.RELEASE/spring-web-5.0.4.RELEASE-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="140" column="0" lean-forward="false" selection-start-line="140" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://G:/m2/repository/org/springframework/spring-webmvc/5.0.4.RELEASE/spring-webmvc-5.0.4.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/ServletInvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="73" column="0" lean-forward="false" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://G:/m2/repository/org/springframework/spring-webmvc/5.0.4.RELEASE/spring-webmvc-5.0.4.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerAdapter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="495" column="0" lean-forward="false" selection-start-line="495" selection-start-column="0" selection-end-line="495" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://G:/m2/repository/org/springframework/spring-webmvc/5.0.4.RELEASE/spring-webmvc-5.0.4.RELEASE.jar!/org/springframework/web/servlet/mvc/method/AbstractHandlerMethodAdapter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://G:/m2/repository/org/springframework/spring-webmvc/5.0.4.RELEASE/spring-webmvc-5.0.4.RELEASE.jar!/org/springframework/web/servlet/DispatcherServlet.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="430" column="0" lean-forward="false" selection-start-line="430" selection-start-column="0" selection-end-line="430" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://G:/m2/repository/org/springframework/spring-webmvc/5.0.4.RELEASE/spring-webmvc-5.0.4.RELEASE.jar!/org/springframework/web/servlet/FrameworkServlet.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="422" column="0" lean-forward="false" selection-start-line="422" selection-start-column="0" selection-end-line="422" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://G:/m2/repository/org/apache/tomcat/embed/tomcat-embed-websocket/8.5.28/tomcat-embed-websocket-8.5.28.jar!/org/apache/tomcat/websocket/server/WsFilter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://G:/m2/repository/org/apache/shiro/shiro-web/1.4.0/shiro-web-1.4.0.jar!/org/apache/shiro/web/servlet/OncePerRequestFilter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://G:/m2/repository/org/apache/tomcat/embed/tomcat-embed-core/8.5.28/tomcat-embed-core-8.5.28.jar!/org/apache/catalina/core/ApplicationFilterChain.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="74" column="0" lean-forward="false" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://G:/m2/repository/org/apache/shiro/shiro-web/1.4.0/shiro-web-1.4.0.jar!/org/apache/shiro/web/servlet/ProxiedFilterChain.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://G:/m2/repository/org/apache/shiro/shiro-web/1.4.0/shiro-web-1.4.0.jar!/org/apache/shiro/web/servlet/AdviceFilter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="446">
+          <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/session/RedisSessionDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1083">
-          <caret line="70" column="19" lean-forward="false" selection-start-line="70" selection-start-column="19" selection-end-line="70" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/session/CustomSessionManage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="19" column="30" lean-forward="false" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin/_header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="122" lean-forward="false" selection-start-line="2" selection-start-column="122" selection-end-line="2" selection-end-column="122" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin/_menu.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin/admin-add.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://G:/m2/repository/org/apache/shiro/shiro-web/1.4.0/shiro-web-1.4.0.jar!/org/apache/shiro/web/util/WebUtils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4617">
-          <caret line="26" column="13" lean-forward="false" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/college/controller/admin/AdminController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-494">
-          <caret line="17" column="60" lean-forward="false" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/college/serviceimp/user/IUserServiceImp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
+        <state relative-caret-position="152">
           <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
           <folding />
         </state>
@@ -1416,137 +1703,72 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cn/shiro/ShiroConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="168" column="38" lean-forward="false" selection-start-line="168" selection-start-column="15" selection-end-line="168" selection-end-column="38" />
+        <state relative-caret-position="190">
+          <caret line="54" column="56" lean-forward="false" selection-start-line="54" selection-start-column="51" selection-end-line="54" selection-end-column="56" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/college/controller/user/UrlController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/admin.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        <state relative-caret-position="5567">
+          <caret line="302" column="22" lean-forward="false" selection-start-line="302" selection-start-column="11" selection-end-line="302" selection-end-column="22" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/college/controller/user/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-133">
-          <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/filter/CorsConf.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="14" lean-forward="true" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/filter/RolesOrFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-766">
-          <caret line="35" column="22" lean-forward="false" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin/admin-list.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="35" column="58" lean-forward="true" selection-start-line="35" selection-start-column="58" selection-end-line="35" selection-end-column="58" />
-          <folding>
-            <marker date="1558442680057" expanded="true" signature="5058:5078" ph="..." />
-            <marker date="1558442680057" expanded="true" signature="5104:5112" ph="&amp;##xe615;" />
-            <marker date="1558442680057" expanded="true" signature="5533:5553" ph="..." />
-            <marker date="1558442680057" expanded="true" signature="5579:5587" ph="&amp;##xe631;" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/college/controller/admin/adminMg/OpController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="33" column="19" lean-forward="false" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="39" column="27" lean-forward="false" selection-start-line="39" selection-start-column="27" selection-end-line="39" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/util/Msg.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="565">
-          <caret line="53" column="27" lean-forward="false" selection-start-line="53" selection-start-column="27" selection-end-line="53" selection-end-column="27" />
-          <folding>
-            <element signature="e#912#913#0" expanded="true" />
-            <element signature="e#944#945#0" expanded="true" />
-            <element signature="e#1003#1004#0" expanded="true" />
-            <element signature="e#1044#1045#0" expanded="true" />
-            <element signature="e#1082#1083#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/college/controller/APIController/ApiController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="49" column="10" lean-forward="false" selection-start-line="49" selection-start-column="10" selection-end-line="49" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="650">
-          <caret line="39" column="20" lean-forward="false" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/college/controller/user/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="58" column="7" lean-forward="true" selection-start-line="58" selection-start-column="7" selection-end-line="58" selection-end-column="7" />
-          <folding>
-            <element signature="e#1654#1673#1" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3549">
-          <caret line="46" column="27" lean-forward="true" selection-start-line="46" selection-start-column="27" selection-end-line="46" selection-end-column="27" />
+        <state relative-caret-position="3825">
+          <caret line="296" column="22" lean-forward="false" selection-start-line="296" selection-start-column="22" selection-end-line="296" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/index.js">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/eleDel.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="31" lean-forward="false" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="31" />
+        <state relative-caret-position="209">
+          <caret line="65" column="17" lean-forward="false" selection-start-line="65" selection-start-column="11" selection-end-line="65" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/college/controller/admin/AdminController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="72" column="22" lean-forward="false" selection-start-line="72" selection-start-column="22" selection-end-line="72" selection-end-column="22" />
+          <folding>
+            <element signature="e#947#948#0" expanded="true" />
+            <element signature="e#984#985#0" expanded="true" />
+            <element signature="e#1152#1153#0" expanded="true" />
+            <element signature="e#1197#1198#0" expanded="true" />
+            <element signature="e#1370#1371#0" expanded="true" />
+            <element signature="e#1418#1419#0" expanded="true" />
+            <element signature="e#1591#1592#0" expanded="true" />
+            <element signature="e#1639#1640#0" expanded="true" />
+            <element signature="e#1809#1810#0" expanded="true" />
+            <element signature="e#1856#1857#0" expanded="true" />
+            <element signature="e#2028#2029#0" expanded="true" />
+            <element signature="e#2076#2077#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin/pages/admin/list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="61" column="87" lean-forward="false" selection-start-line="61" selection-start-column="87" selection-end-line="61" selection-end-column="87" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#a#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin/pages/admin/edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-342">
+          <caret line="98" column="35" lean-forward="false" selection-start-line="98" selection-start-column="35" selection-end-line="98" selection-end-column="35" />
           <folding />
         </state>
       </provider>
