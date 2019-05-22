@@ -74,5 +74,12 @@ public class AdminController {
         return "/admin/pages/admin/edit";
     }
 
+    /**
+     * add-admin
+     */
+    @RequestMapping(value = "pages/order/list.html",method = RequestMethod.GET)
+    public String orderList(HttpServletRequest request) {
+        return "/admin/pages/order/list";
+    }
 
 }

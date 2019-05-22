@@ -7,8 +7,8 @@
 		<meta name="renderer" content="webkit">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
-		<link rel="stylesheet" href="../../static/css/font.css">
-		<link rel="stylesheet" href="../../static/css/weadmin.css">
+		<link rel="stylesheet" href="../../../css/font.css">
+		<link rel="stylesheet" href="../../../css/weadmin.css">
 		<script src="../../lib/layui/layui.js" charset="utf-8"></script>
 		<!-- 让IE8/9支持媒体查询，从而兼容栅格 -->
 		<!--[if lt IE 9]>
@@ -70,8 +70,7 @@
 			</div>
 			<div class="weadmin-block">
 				<button class="layui-btn layui-btn-danger" onclick="delAll()"><i class="layui-icon"></i>批量删除</button>
-				<button class="layui-btn" onclick="WeAdminShow('添加订单','./add.html')"><i class="layui-icon"></i>添加</button>
-				<span class="fr" style="line-height:40px">共有数据：88 条</span>
+				<button class="layui-btn" onclick="WeAdminShow('添加订单','add.html')"><i class="layui-icon"></i>添加</button>
 			</div>
 			<table class="layui-table">
 				<thead>
@@ -132,7 +131,7 @@
 		</div>
 		<script>
 			layui.extend({
-				admin: '{/}../../static/js/admin'
+				admin: '{/}../../../js/admin'
 			});
 			layui.use(['laydate','jquery','admin'], function() {
 				var laydate = layui.laydate,

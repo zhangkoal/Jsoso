@@ -2,389 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5afed17d-53f5-4b18-8c41-1156349e369f" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cn/filter/APIFilter.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/cn/token/TokenUtil.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/css/font.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/css/weadmin.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/css/weadmin.less" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/iconfont.eot" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/iconfont.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/iconfont.ttf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/fonts/iconfont.woff" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/images/aiwrap.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/images/bg.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/images/mapico1.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/images/mapico2.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/images/mapico3.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/images/mapico4.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/js/admin.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/js/eleDel.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/js/extends/tabmenu.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/js/weadmin.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/css/layui.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/css/layui.mobile.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/css/modules/code.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/css/modules/laydate/default/laydate.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/css/modules/layer/default/icon-ext.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/css/modules/layer/default/icon.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/css/modules/layer/default/layer.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/css/modules/layer/default/loading-0.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/css/modules/layer/default/loading-1.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/css/modules/layer/default/loading-2.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/font/iconfont.eot" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/font/iconfont.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/font/iconfont.ttf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/font/iconfont.woff" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/0.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/1.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/10.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/11.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/12.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/13.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/14.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/15.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/16.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/17.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/18.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/19.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/2.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/20.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/21.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/22.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/23.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/24.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/25.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/26.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/27.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/28.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/29.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/3.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/30.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/31.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/32.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/33.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/34.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/35.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/36.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/37.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/38.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/39.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/4.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/40.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/41.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/42.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/43.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/44.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/45.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/46.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/47.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/48.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/49.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/5.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/50.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/51.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/52.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/53.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/54.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/55.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/56.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/57.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/58.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/59.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/6.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/60.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/61.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/62.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/63.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/64.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/65.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/66.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/67.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/68.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/69.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/7.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/70.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/71.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/8.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/images/face/9.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/lay/modules/carousel.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/lay/modules/code.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/lay/modules/colorpicker.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/lay/modules/element.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/lay/modules/flow.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/lay/modules/form.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/lay/modules/jquery.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/lay/modules/laydate.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/lay/modules/layedit.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/lay/modules/layer.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/lay/modules/laypage.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/lay/modules/laytpl.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/lay/modules/mobile.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/lay/modules/rate.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/lay/modules/slider.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/lay/modules/table.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/lay/modules/tree.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/lay/modules/upload.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/lay/modules/util.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/lay/treeGird.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/layui.all.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui/layui.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/css/layui.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/css/layui.mobile.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/css/modules/code.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/css/modules/laydate/default/laydate.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/css/modules/layer/default/icon-ext.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/css/modules/layer/default/icon.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/css/modules/layer/default/layer.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/css/modules/layer/default/loading-0.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/css/modules/layer/default/loading-1.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/css/modules/layer/default/loading-2.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/font/iconfont.eot" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/font/iconfont.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/font/iconfont.ttf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/font/iconfont.woff" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/0.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/1.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/10.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/11.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/12.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/13.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/14.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/15.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/16.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/17.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/18.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/19.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/2.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/20.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/21.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/22.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/23.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/24.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/25.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/26.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/27.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/28.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/29.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/3.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/30.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/31.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/32.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/33.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/34.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/35.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/36.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/37.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/38.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/39.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/4.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/40.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/41.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/42.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/43.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/44.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/45.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/46.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/47.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/48.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/49.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/5.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/50.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/51.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/52.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/53.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/54.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/55.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/56.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/57.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/58.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/59.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/6.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/60.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/61.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/62.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/63.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/64.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/65.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/66.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/67.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/68.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/69.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/7.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/70.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/71.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/8.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/images/face/9.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/lay/modules/carousel.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/lay/modules/code.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/lay/modules/element.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/lay/modules/flow.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/lay/modules/form.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/lay/modules/jquery.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/lay/modules/laydate.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/lay/modules/layedit.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/lay/modules/layer.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/lay/modules/laypage.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/lay/modules/laytpl.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/lay/modules/mobile.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/lay/modules/rate.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/lay/modules/table.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/lay/modules/tree.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/lay/modules/upload.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/lay/modules/util.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/lay/treeGird.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/layui.all.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/static/lib/layui230/layui.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/pages/404.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/pages/admin/add.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/pages/admin/cate.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/pages/admin/edit.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/pages/admin/list.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/pages/admin/role-add.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/pages/admin/role.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/pages/admin/rule.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/pages/article/add.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/pages/article/category-add.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/pages/article/category-edit.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/pages/article/category-edit.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/pages/article/category.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/pages/article/category.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/pages/article/list.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/pages/article/list.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/pages/article/复制 list.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/pages/echarts/echarts1.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/pages/echarts/echarts2.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/pages/echarts/echarts3.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/pages/echarts/echarts4.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/pages/echarts/echarts5.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/pages/echarts/echarts6.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/pages/echarts/echarts7.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/pages/echarts/echarts8.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/pages/echarts/echarts9.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/pages/member/add.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/pages/member/add2.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/pages/member/addInput.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/pages/member/del.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/pages/member/edit.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/pages/member/list.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/pages/member/list2.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/pages/member/password.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/pages/order/add.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/pages/order/list.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/pages/welcome.html" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/Application.java" afterPath="$PROJECT_DIR$/src/main/java/cn/Application.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cn/college/controller/admin/AdminController.java" afterPath="$PROJECT_DIR$/src/main/java/cn/college/controller/admin/AdminController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/college/controller/admin/adminMg/OpController.java" afterPath="$PROJECT_DIR$/src/main/java/cn/college/controller/admin/adminMg/OpController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/filter/CorsConf.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/util/SessionUtil.java" afterPath="$PROJECT_DIR$/src/main/java/cn/util/SessionUtil.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap-theme.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap-theme.css.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap-theme.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap-theme.min.css.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap.css.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/bootstrap.min.css.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/font-awesome.min.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/hat.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/index.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/login-register.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/login.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/login2.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/main-index.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/style.css" afterPath="$PROJECT_DIR$/src/main/resources/static/css/style.css" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/css/theme.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/fonts/glyphicons-halflings-regular.eot" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/fonts/glyphicons-halflings-regular.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/fonts/glyphicons-halflings-regular.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/fonts/glyphicons-halflings-regular.woff" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/fonts/glyphicons-halflings-regular.woff2" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/data/afficheimg/1.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/data/afficheimg/2.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/data/afficheimg/3.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/data/afficheimg/4.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/data/afficheimg/5.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/data/afficheimg/meigui.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/img/login.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/app.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/bootstrap.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/bootstrap.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/date-format.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/index.js" afterPath="$PROJECT_DIR$/src/main/resources/static/js/index.js" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/jquery-3.2.1.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/jquery-3.2.1.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/jquery-3.2.1.slim.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/session.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/404.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/LICENSE.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/_blank.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/_footer.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/_header.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/_menu.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/_meta.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/admin-add.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/admin-list.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/admin-password-edit.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/admin-permission.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/admin-role-add.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/admin-role.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/article-add.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/article-class-edit.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/article-class.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/article-list.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/change-password.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/charts-1.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/charts-2.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/charts-3.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/charts-4.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/charts-5.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/charts-6.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/charts-7.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/codeing.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/favicon.ico" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/feedback-list.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/index-2.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/index.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/index.html" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/login.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/login.html" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/logo.psd" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/member-add.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/member-del.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/member-list.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/member-record-browse.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/member-record-download.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/member-record-share.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/member-show.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/picture-add.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/picture-list.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/picture-show.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/product-add.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/product-brand.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/product-category-add.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/product-category.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/product-list.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/record-browse.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/record-download.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/record-share.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/system-base.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/system-category-add.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/system-category.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/system-data.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/system-log.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/system-shielding.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/user-add.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/user-list.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/user-password-edit.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/user-show.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/welcome.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/error/500.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/error/500.html" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/footer.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/shiro/home.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/shiro/login.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/admin/pages/order/list.html" afterPath="$PROJECT_DIR$/src/main/resources/templates/admin/pages/order/list.html" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -416,11 +36,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AdminController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="AdminController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/cn/college/controller/admin/AdminController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="72" column="22" lean-forward="false" selection-start-line="72" selection-start-column="22" selection-end-line="72" selection-end-column="22" />
+            <state relative-caret-position="456">
+              <caret line="81" column="34" lean-forward="false" selection-start-line="81" selection-start-column="34" selection-end-line="81" selection-end-column="34" />
               <folding>
                 <element signature="e#947#948#0" expanded="true" />
                 <element signature="e#984#985#0" expanded="true" />
@@ -434,6 +54,8 @@
                 <element signature="e#1856#1857#0" expanded="true" />
                 <element signature="e#2028#2029#0" expanded="true" />
                 <element signature="e#2076#2077#0" expanded="true" />
+                <element signature="e#2248#2249#0" expanded="true" />
+                <element signature="e#2296#2297#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -442,8 +64,18 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3825">
-              <caret line="296" column="22" lean-forward="false" selection-start-line="296" selection-start-column="22" selection-end-line="296" selection-end-column="22" />
+            <state relative-caret-position="246">
+              <caret line="151" column="58" lean-forward="false" selection-start-line="151" selection-start-column="54" selection-end-line="151" selection-end-column="58" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="list.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin/pages/order/list.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-855">
+              <caret line="133" column="35" lean-forward="false" selection-start-line="133" selection-start-column="35" selection-end-line="133" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -462,7 +94,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="edit.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="edit.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin/pages/admin/edit.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-342">
@@ -507,7 +139,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>CLASS</find>
       <find>classic</find>
       <find>exclusion</find>
       <find>shiro</find>
@@ -537,6 +168,7 @@
       <find>admin.js</find>
       <find>WeAdminShow</find>
       <find>login</find>
+      <find>订单管理</find>
     </findStrings>
     <replaceStrings>
       <replace>authorityRepository</replace>
@@ -559,7 +191,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/cn/college/serviceimp/user/IUserServiceImp.java" />
         <option value="$PROJECT_DIR$/src/main/resources/static/js/date-format.js" />
         <option value="$PROJECT_DIR$/src/main/java/cn/util/JwtUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/cn/token/TokenModel.java" />
@@ -608,8 +239,9 @@
         <option value="$PROJECT_DIR$/src/main/resources/templates/admin/index.html" />
         <option value="$PROJECT_DIR$/src/main/resources/static/js/eleDel.js" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/admin/pages/admin/list.html" />
-        <option value="$PROJECT_DIR$/src/main/java/cn/college/controller/admin/AdminController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/admin/pages/admin/edit.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/admin/pages/order/list.html" />
+        <option value="$PROJECT_DIR$/src/main/java/cn/college/controller/admin/AdminController.java" />
       </list>
     </option>
   </component>
@@ -718,6 +350,40 @@
               <item name="Jsoso" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Jsoso" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Jsoso" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Jsoso" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Jsoso" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+              <item name="college" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Jsoso" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Jsoso" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+              <item name="college" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Jsoso" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Jsoso" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -727,15 +393,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Jsoso" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Jsoso" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Jsoso" type="b2602c69:ProjectViewProjectNode" />
@@ -763,17 +420,6 @@
               <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="admin" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Jsoso" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Jsoso" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Jsoso" type="b2602c69:ProjectViewProjectNode" />
@@ -1112,7 +758,7 @@
       <workItem from="1558325334569" duration="10245000" />
       <workItem from="1558406847663" duration="3510000" />
       <workItem from="1558411411317" duration="37891000" />
-      <workItem from="1558488721346" duration="2548000" />
+      <workItem from="1558488721346" duration="3131000" />
     </task>
     <task id="LOCAL-00001" summary="添加redis">
       <created>1523804139087</created>
@@ -1226,7 +872,14 @@
       <option name="project" value="LOCAL" />
       <updated>1558444024744</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="后台管理代码完善">
+      <created>1558491333426</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1558491333426</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1262,7 +915,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="290758000" />
+    <option name="totallyTimeSpent" value="291341000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1318,7 +971,8 @@
     <MESSAGE value="登陆界面完善" />
     <MESSAGE value="Merge branch 'develop' of https://github.com/zhangkoal/Jsoso into develop&#10;&#10;# Conflicts:&#10;#&#9;src/main/resources/templates/register.html" />
     <MESSAGE value="后台管理代码添加" />
-    <option name="LAST_COMMIT_MESSAGE" value="后台管理代码添加" />
+    <MESSAGE value="后台管理代码完善" />
+    <option name="LAST_COMMIT_MESSAGE" value="后台管理代码完善" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1380,17 +1034,11 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin/pages/admin/role-add.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="84" column="35" lean-forward="false" selection-start-line="84" selection-start-column="35" selection-end-line="84" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin/pages/admin/rule.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
           <caret line="110" column="29" lean-forward="false" selection-start-line="110" selection-start-column="29" selection-end-line="110" selection-end-column="29" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1398,6 +1046,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-223">
           <caret line="95" column="39" lean-forward="false" selection-start-line="95" selection-start-column="39" selection-end-line="95" selection-end-column="39" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1405,6 +1054,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
           <caret line="82" column="25" lean-forward="false" selection-start-line="82" selection-start-column="25" selection-end-line="82" selection-end-column="25" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1412,6 +1062,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
           <caret line="9" column="42" lean-forward="true" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1427,6 +1078,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-570">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <marker date="1558453505871" expanded="true" signature="3544:3552" ph="&amp;##x1006;" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1434,6 +1089,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4541">
           <caret line="374" column="29" lean-forward="false" selection-start-line="374" selection-start-column="29" selection-end-line="374" selection-end-column="29" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1477,6 +1133,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="347">
           <caret line="45" column="8" lean-forward="true" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="8" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1484,6 +1141,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="179">
           <caret line="25" column="13" lean-forward="false" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1505,6 +1163,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="65">
           <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1717,40 +1376,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3825">
-          <caret line="296" column="22" lean-forward="false" selection-start-line="296" selection-start-column="22" selection-end-line="296" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/eleDel.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
           <caret line="65" column="17" lean-forward="false" selection-start-line="65" selection-start-column="11" selection-end-line="65" selection-end-column="17" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cn/college/controller/admin/AdminController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="72" column="22" lean-forward="false" selection-start-line="72" selection-start-column="22" selection-end-line="72" selection-end-column="22" />
-          <folding>
-            <element signature="e#947#948#0" expanded="true" />
-            <element signature="e#984#985#0" expanded="true" />
-            <element signature="e#1152#1153#0" expanded="true" />
-            <element signature="e#1197#1198#0" expanded="true" />
-            <element signature="e#1370#1371#0" expanded="true" />
-            <element signature="e#1418#1419#0" expanded="true" />
-            <element signature="e#1591#1592#0" expanded="true" />
-            <element signature="e#1639#1640#0" expanded="true" />
-            <element signature="e#1809#1810#0" expanded="true" />
-            <element signature="e#1856#1857#0" expanded="true" />
-            <element signature="e#2028#2029#0" expanded="true" />
-            <element signature="e#2076#2077#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1770,6 +1400,45 @@
         <state relative-caret-position="-342">
           <caret line="98" column="35" lean-forward="false" selection-start-line="98" selection-start-column="35" selection-end-line="98" selection-end-column="35" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="151" column="58" lean-forward="false" selection-start-line="151" selection-start-column="54" selection-end-line="151" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/admin/pages/order/list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-855">
+          <caret line="133" column="35" lean-forward="false" selection-start-line="133" selection-start-column="35" selection-end-line="133" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cn/college/controller/admin/AdminController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="81" column="34" lean-forward="false" selection-start-line="81" selection-start-column="34" selection-end-line="81" selection-end-column="34" />
+          <folding>
+            <element signature="e#947#948#0" expanded="true" />
+            <element signature="e#984#985#0" expanded="true" />
+            <element signature="e#1152#1153#0" expanded="true" />
+            <element signature="e#1197#1198#0" expanded="true" />
+            <element signature="e#1370#1371#0" expanded="true" />
+            <element signature="e#1418#1419#0" expanded="true" />
+            <element signature="e#1591#1592#0" expanded="true" />
+            <element signature="e#1639#1640#0" expanded="true" />
+            <element signature="e#1809#1810#0" expanded="true" />
+            <element signature="e#1856#1857#0" expanded="true" />
+            <element signature="e#2028#2029#0" expanded="true" />
+            <element signature="e#2076#2077#0" expanded="true" />
+            <element signature="e#2248#2249#0" expanded="true" />
+            <element signature="e#2296#2297#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
