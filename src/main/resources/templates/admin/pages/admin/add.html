@@ -25,7 +25,7 @@
                 <span class="we-red">*</span>登录名
             </label>
             <div class="layui-input-inline">
-                <input type="text" id="username" name="username" required="" lay-verify="required"
+                <input type="text" id="username" name="userName" required="" lay-verify="required"
                        autocomplete="off" class="layui-input">
             </div>
             <div class="layui-form-mid layui-word-aux">
@@ -65,7 +65,7 @@
                 <span class="we-red">*</span>密码
             </label>
             <div class="layui-input-inline">
-                <input type="password" id="L_pass" name="pass" required="" lay-verify="pass"
+                <input type="password" id="L_pass" name="password" required="" lay-verify="pass"
                        autocomplete="off" class="layui-input">
             </div>
             <div class="layui-form-mid layui-word-aux">
@@ -77,7 +77,7 @@
                 <span class="we-red">*</span>确认密码
             </label>
             <div class="layui-input-inline">
-                <input type="password" id="L_repass" name="repass" required="" lay-verify="repass"
+                <input type="password" id="L_repass" name="repassword" required="" lay-verify="repass"
                        autocomplete="off" class="layui-input">
             </div>
         </div>
@@ -90,17 +90,17 @@
 <script src="../../../lib/layui/layui.js" charset="utf-8"></script>
 <script src="../../../js/cookie.js" charset="utf-8"></script>
 <script type="text/javascript">
-    layui.extend({
-        admin: '{/}../../../js/admin'
-    });
-    layui.use(['form', 'layer', 'admin', 'jquery'], function () {
+    // layui.extend({
+    //     admin: '{/}../../../js/admin'
+    // });
+    layui.use(['form', 'layer', 'jquery'], function () {
         var form = layui.form,
             admin = layui.admin,
             layer = layui.layer,
             $ = layui.jquery;
         //加载权限列表
-
-        form.render($.ajax({
+        form.render();
+        $.ajax({
             url : "/api/role/getAllRoles",
             type : 'GET',
             beforeSend: function (XMLHttpRequest) {
@@ -111,12 +111,12 @@
                     for(var i = 0; i < data.data.length; i++) {
                         var roleCode = data.data[i].roleCode;
                         var roleName =  data.data[i].roleName;
-                        $("#roles").append("<input type='checkbox' name='"+roleCode+"'  lay-skin='primary' title='"+roleName+"' >\n");
+                        $("#roles").append("<input type='checkbox' name='roles' value='"+roleCode+"'  lay-skin='primary' title='"+roleName+"' >\n");
                     }
                     form.render('checkbox');
                 }
             }
-        }));
+        });
         //自定义验证规则
         form.verify({
             nikename: function (value) {
@@ -125,7 +125,7 @@
                 }
             }
             , pass: [/(.+){6,12}$/, '密码必须6到12位']
-            , repass: function (value) {
+            , repassword: function (value) {
                 if ($('#L_pass').val() != $('#L_repass').val()) {
                     return '两次密码不一致';
                 }
@@ -134,14 +134,33 @@
 
         //监听提交
         form.on('submit(add)', function (data) {
-            alert("add!!!!!!!!!!")
-            console.log(data);
-            //发异步，把数据提交给php
-            layer.alert("增加成功", {icon: 6}, function () {
-                // 获得frame索引
-                var index = parent.layer.getFrameIndex(window.name);
-                //关闭当前frame
-                parent.layer.close(index);
+            var skillArray = "";
+            $("input[name='roles']:checked").each(function () {
+                var value = $(this).val();
+                skillArray = skillArray + value + ",";
+            })
+            data.field.roles=  skillArray ;
+
+            $.ajax({
+                url: '/api/adminData/addAdmin',
+                data: data.field,
+                type : 'POST',
+                beforeSend: function (XMLHttpRequest) {
+                    XMLHttpRequest.setRequestHeader("token", getCookie("access_token"));
+                },
+                success: function (data) {
+                    if(data.code == -1) {
+
+                    } else if(data.code == 200) {
+                        layer.alert("添加成功", {icon: 6}, function () {
+                            // 获得frame索引
+                            var index = parent.layer.getFrameIndex(window.name);
+                            //关闭当前frame
+                            parent.layer.close(index);
+                            parent.location.reload();
+                        });
+                    }
+                }
             });
             return false;
         });

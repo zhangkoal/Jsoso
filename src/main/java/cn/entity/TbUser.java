@@ -24,7 +24,15 @@ public class TbUser implements java.io.Serializable{
     public String email;
 
     public int status;
+    public String roles;
 
+    public String getRoles() {
+        return roles;
+    }
+
+    public void setRoles(String roles) {
+        this.roles = roles;
+    }
 
     private boolean rememberMe;
 

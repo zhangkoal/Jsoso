@@ -21,7 +21,7 @@ public interface IUserService {
     void updateUser(TbUser user);
 
     //删除人员
-    void deleteUser(long userId);
+    void deleteUser(List<String> userIdList);
 
     /**
      * 查询账号是否存在

@@ -52,6 +52,7 @@ public class UrlController {
         subject.logout();
         return "index";
     }
+
     /**
      * 首页
      */
