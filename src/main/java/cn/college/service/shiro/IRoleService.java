@@ -1,6 +1,7 @@
 package cn.college.service.shiro;
 
 import cn.entity.TbRole;
+import cn.entity.TbUserRole;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
@@ -19,6 +20,16 @@ public interface IRoleService {
     String getRoleByUserName(String userName);
 
     List<TbRole> getRoleList();
+
+    void addUserRoleLink(TbUserRole userRole);
+
+    boolean checkRoleByRoleCode(String roleCode);
+
+    String getRoleIdByRoleCode(String roleCode);
+
+    void deleteUserRoleLink(String userId);
+
+
 
 
 }

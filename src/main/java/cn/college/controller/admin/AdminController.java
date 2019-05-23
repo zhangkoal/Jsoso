@@ -1,10 +1,13 @@
 package cn.college.controller.admin;
 
+import cn.constant.ResultStatus;
+import cn.util.Msg;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.subject.Subject;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpServletRequest;
 
@@ -19,11 +22,15 @@ import javax.servlet.http.HttpServletRequest;
 public class AdminController {
 
     @RequestMapping(value = "logout",method = RequestMethod.GET)
-    public String adminLogoutReq(HttpServletRequest request) {
+    @ResponseBody
+    public Msg adminLogoutReq(HttpServletRequest request) {
+        Msg msg = new Msg();
         Subject subject = SecurityUtils.getSubject();
         //注销
         subject.logout();
-        return "/admin/index";
+        msg.setUrl("/admin/index");
+        msg.setCode(ResultStatus.SUCCESS.getId());
+        return msg;
     }
 
     /**

@@ -1,6 +1,8 @@
 package cn.entity;
 
 
+import java.util.Date;
+
 public class TbUserRole {
     public String id;
 
@@ -8,7 +10,19 @@ public class TbUserRole {
 
     public String roleid;
 
-    private boolean status;
+    public Date createDate;
+
+    private int status;
+
+    public Date getCreateDate() {
+        return createDate;
+    }
+
+
+
+    public void setCreateDate(Date createDate) {
+        this.createDate = createDate;
+    }
 
     public String getId() {
         return id;
@@ -34,11 +48,11 @@ public class TbUserRole {
         this.roleid = roleid;
     }
 
-    public boolean isStatus() {
+    public int isStatus() {
         return status;
     }
 
-    public void setStatus(boolean status) {
+    public void setStatus(int status) {
         this.status = status;
     }
 }

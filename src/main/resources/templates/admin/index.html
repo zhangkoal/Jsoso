@@ -12,6 +12,7 @@
 		<link rel="stylesheet" href="../css/font.css">
 		<link rel="stylesheet" href="../css/weadmin.css">
 		<script type="text/javascript" src="../lib/layui/layui.js" charset="utf-8"></script>
+		<script type="text/javascript" src="../js/cookie.js" charset="utf-8"></script>
 	</head>
 
 	<body>
@@ -51,10 +52,10 @@
 							<a onclick="WeAdminShow('个人信息','http://www.baidu.com')">个人信息</a>
 						</dd>
 						<dd>
-							<a onclick="WeAdminShow('切换帐号','logout')">切换帐号</a>
+							<a onclick="logout()" target="_top">切换帐号</a>
 						</dd>
 						<dd>
-							<a class="loginout" href="logout">退出</a>
+							<a class="loginout" onclick="logout()"  >退出</a>
 						</dd>
 					</dl>
 				</li>
@@ -308,6 +309,19 @@
 						return false;
 					}*/
 				});
+				window.logout = function () {
+                    $.ajax({
+                        url: '/admin/logout',
+                        type : 'GET',
+                        beforeSend: function (XMLHttpRequest) {
+                            XMLHttpRequest.setRequestHeader("token", getCookie("access_token"));
+                        },
+                        success: function (data) {
+                            top.location.href = data.url;
+                        }
+                    });
+
+                }
 			});
 
 		</script>

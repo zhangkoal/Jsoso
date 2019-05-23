@@ -3,8 +3,10 @@ package cn.college.serviceimp.shiro;
 import cn.college.dao.shiro.RoleRepository;
 import cn.college.service.shiro.IRoleService;
 import cn.entity.TbRole;
+import cn.entity.TbUserRole;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -15,6 +17,8 @@ import java.util.List;
  * @Version 1.0
  */
 @Service
+//事务注解
+@Transactional
 public class RoleServiceImp implements IRoleService {
 
     @Autowired
@@ -35,5 +39,29 @@ public class RoleServiceImp implements IRoleService {
     public List<TbRole> getRoleList() {
         List<TbRole> roleList = roleRepository.getRoleList();
         return roleList;
+    }
+
+    @Override
+    public void addUserRoleLink(TbUserRole userRole) {
+        roleRepository.addUserRoleLink(userRole);
+    }
+
+    @Override
+    public boolean checkRoleByRoleCode(String roleCode) {
+        int count = roleRepository.checkRoleByRoleCode(roleCode);
+        if(count > 0) {
+            return true;
+        }
+        return false;
+    }
+
+    @Override
+    public String getRoleIdByRoleCode(String roleCode) {
+        return roleRepository.getRoleIdByRoleCode(roleCode);
+    }
+
+    @Override
+    public void deleteUserRoleLink(String userId) {
+        roleRepository.deleteUserRoleLink(userId);
     }
 }

@@ -1,6 +1,7 @@
 package cn.college.serviceimp.user;
 
-import cn.college.dao.user.UserMapper;
+import cn.college.dao.user.UserRepository;
+import cn.college.service.shiro.IRoleService;
 import cn.college.service.user.IUserService;
 import cn.entity.TbUser;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,11 +21,14 @@ import java.util.List;
 public class IUserServiceImp implements IUserService {
 
     @Autowired
-    private UserMapper userMapper;
+    private UserRepository userRepository;
+
+    @Autowired
+    private IRoleService roleService;
 
     @Override
     public void addUser(TbUser user) {
-
+        userRepository.addUser(user);
     }
 
     @Override
@@ -32,9 +36,15 @@ public class IUserServiceImp implements IUserService {
 
     }
 
-    @Override
-    public void deleteUser(long userId) {
 
+    @Override
+    public void deleteUser(List<String> userIdList) {
+        for(String userId : userIdList) {
+            // 删除人员
+            userRepository.deleteUserById(userId);
+            //删除权限
+            roleService.deleteUserRoleLink(userId);
+        }
     }
 
     /**
@@ -44,18 +54,18 @@ public class IUserServiceImp implements IUserService {
      */
     @Override
     public int getCountByUserName(String userName) {
-        return userMapper.getCountByUserName(userName);
+        return userRepository.getCountByUserName(userName);
     }
 
     @Override
     public int userLogin(String userName, String password) {
 
-        return userMapper.userLogin(userName, password);
+        return userRepository.userLogin(userName, password);
     }
 
     @Override
     public TbUser getUserByUserName(String userName) {
-        TbUser user = userMapper.findByName(userName);
+        TbUser user = userRepository.findByName(userName);
         return user;
     }
 
@@ -63,12 +73,12 @@ public class IUserServiceImp implements IUserService {
     //查询用户通过用户名
     @Override
     public TbUser findByName(String userName) {
-        return userMapper.findByName(userName);
+        return userRepository.findByName(userName);
     }
 
     @Override
     public List<TbUser> getAllUserList() {
-        return userMapper.getAllUserList();
+        return userRepository.getAllUserList();
     }
 
 }

@@ -6,15 +6,15 @@ package cn.constant;
  * @Descirption
  * @Version 1.0
  */
-public enum  ResultStatus {
+public enum DataStatus {
 
-    SUCCESS(200, "成功"),
-    FAIL(-1, "失败");
+    NORMAL(10, "正常"),
+    DELETE(-1, "已删除");
 
     private Integer id;
     private String value;
 
-    ResultStatus(Integer id, String value){
+    DataStatus(Integer id, String value){
         this.id = id;
         this.value = value;
 
