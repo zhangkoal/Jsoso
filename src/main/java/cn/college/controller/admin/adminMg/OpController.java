@@ -89,7 +89,7 @@ public class OpController {
             String[] roles = user.getRoles().split(",");
             for(String roleCode : roles) {
                 TbUserRole userRole = new TbUserRole();
-               String roleId = roleService.getRoleIdByRoleCode(roleCode);
+                String roleId = roleService.getRoleIdByRoleCode(roleCode);
                 userRole.setId(UUIDGenerator.getUUID());
                 userRole.setUserid(userId);
                 userRole.setRoleid(roleId);
@@ -97,7 +97,6 @@ public class OpController {
                 userRole.setCreateDate(new Date());
                 roleService.addUserRoleLink(userRole);
             }
-
         }catch (RuntimeException e) {
             msg.setCode(ResultStatus.FAIL.getId());
             msg.setMsg("添加人员失败:" + e.getMessage());
