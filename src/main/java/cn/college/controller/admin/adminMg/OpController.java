@@ -74,7 +74,7 @@ public class OpController {
             if(count > 0) {
                 msg.setCode(ResultStatus.FAIL.getId());
                 msg.setMsg("账号已存在！");
-                return  msg;
+                return msg;
             }
 
             //添加人员
