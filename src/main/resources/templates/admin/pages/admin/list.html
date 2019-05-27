@@ -127,9 +127,19 @@
                             shadeClose: true,
                             shade: 0.4,
                             title: "修改用户",
-                            content: "edit.html"
+                            content: "edit.html",
+                            success: function(layero, index) {
+                                var body = layer.getChildFrame('body', index);
+                                var id = data.id;
+                                body.contents().find("#userId").val(id);
+                                body.contents().find("#username").val(data.userName);
+                                body.contents().find("#phone").val(data.phone);
+                                body.contents().find("#L_email").val(data.email);
+                                // body.contents().find("#userId").val(id);
+                                // body.contents().find("#userId").val(id);
+                            }
                         });
-                        update(data)
+                        // update(data)
                     }
                 });
 

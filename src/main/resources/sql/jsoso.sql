@@ -46,6 +46,7 @@ CREATE TABLE `tb_user_role` (
   `userid` varchar(50),
   `roleid` varchar(50),
   `status` int,
+  `createDate` datetime,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
