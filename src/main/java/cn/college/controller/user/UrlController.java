@@ -56,9 +56,9 @@ public class UrlController {
     /**
      * 首页
      */
-    @RequestMapping(value = "case",method = RequestMethod.GET)
+    @RequestMapping(value = "introduction",method = RequestMethod.GET)
     public String caseReq(HttpServletRequest request) {
-        return "case";
+        return "introduction";
     }
 
     /**
@@ -72,19 +72,26 @@ public class UrlController {
     /**
      * 关于
      */
-    @RequestMapping(value = "about",method = RequestMethod.GET)
+    @RequestMapping(value = "contact",method = RequestMethod.GET)
     public String aboutReq(HttpServletRequest request) {
-        return "about";
+        return "contact";
     }
 
     /**
-     * 关于
+     * footer
      */
     @RequestMapping(value = "footer",method = RequestMethod.GET)
     public String footer(HttpServletRequest request) {
         return "footer";
     }
 
+    /**
+     * header
+     */
+    @RequestMapping(value = "header",method = RequestMethod.GET)
+    public String header(HttpServletRequest request) {
+        return "header";
+    }
 
 
 
