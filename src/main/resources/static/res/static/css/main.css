@@ -379,7 +379,6 @@ body {
     margin-top: 30px
 }
 
->>>>>>> b8a1289b610094482b5f0113923f827f9305bfa7
 .index .index-2 .index-2-img {
     margin-top: 130px
 }
@@ -1612,46 +1611,4 @@ body {
     font-size: 16px;
     margin-top: 40px;
     display: block;
-}
-
-@media only screen and (max-width: 768px) {
-    .content .Partner .cont-box h2 {
-        font-size: 14px;
-    }
-}
-
-@media only screen and (max-width: 767px) {
-    .case-content .banner {
-        display: none;
-    }
-
-    .case-content .imgtext-flow .item img {
-        width: 100%;
-        height: auto;
-    }
-}
-
-.logo img {
-    width: 60px;
-}
-
-.slogan {
-    color: #FFF;
-    position: absolute;
-    left: 50%;
-    top: 35%;
-    margin-left: -300px;
-}
-
-.slogan .theme {
-    display: block;
-    text-align: center;
-    font-size: 36px;
-}
-
-.slogan .msg {
-    font-size: 16px;
-    margin-top: 40px;
-    display: block;
-
 }
