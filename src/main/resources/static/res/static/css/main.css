@@ -57,7 +57,7 @@ body {
 .header .nav {
     font-size: 14px;
     text-align: right;
-    display: inline-block;
+    display: inline-flex;
     vertical-align: top;
     float: right;
 }
