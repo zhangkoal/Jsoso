@@ -4,7 +4,6 @@
 *@Copyright:layui.com
 */
 
-
 /*base*/
 .fl {
     float: left;
@@ -58,7 +57,7 @@ body {
 .header .nav {
     font-size: 14px;
     text-align: right;
-    display: inline-flex;
+    display: inline-block;
     vertical-align: top;
     float: right;
 }
@@ -71,10 +70,6 @@ body {
 
 .header .nav a.active {
     color: #ab8e75 !important;
-}
-
-.header .nav a:link {
-    color: #010101 !important;
 }
 
 .header .nav a:hover {
@@ -105,7 +100,6 @@ body {
 }
 
 /*end-header*/
-
 
 /*footer*/
 .footer {
@@ -143,9 +137,7 @@ body {
 
 /*footer*/
 
-
 /*end-base*/
-
 
 /*index*/
 .content .title {
@@ -255,8 +247,58 @@ body {
     background: #fff;
 }
 
-/*end-index*/
+.index .index-2 {
+    height: 628px;
+}
 
+.index .index-2 .index-left {
+    margin-top: 200px
+}
+
+.index .index-2 .index-left .title {
+    font-size: 28px;
+    color: #02b2b5
+}
+
+.index .index-2 .index-left .value {
+    display: block;
+    font-size: 16px;
+    line-height: 30px;
+    margin-top: 30px
+}
+
+.index .index-2 .index-2-img {
+    margin-top: 130px
+}
+
+.index .index-3 {
+    height: 628px;
+    width: 100%;
+    background-image: url('../../../img/provider/index-3-bg.jpg')
+}
+
+.index .index-3 .index-3-img {
+    text-align: right
+}
+
+.index .index-3 .index-right {
+    text-align: center;
+    margin-top: 200px;
+    margin-left: 30px
+}
+
+.index .index-3 .index-right .title {
+    font-size: 28px;
+    color: #ffffff
+}
+
+.index .index-3 .index-right .value {
+    font-size: 16px;
+    color: #ffffff;
+    display: block
+}
+
+/*end-index*/
 
 /*service*/
 .tlinks {
@@ -337,7 +379,6 @@ body {
 }
 
 /*end-service*/
-
 
 /*contact*/
 .contact-content .contact-big-img {
@@ -526,7 +567,6 @@ body {
 
 /*end-about*/
 
-
 /*details*/
 .details-content {
     max-width: 1200px;
@@ -559,84 +599,135 @@ body {
 
 /*end-details*/
 
-
-/*case*/
-.case-content .banner {
-    max-width: 1440px;
-    margin: 60px auto 100px auto;
-    position: relative;
-    padding-bottom: 5%;
+/*introduction*/
+.introduction .nav {
+    height: 496px;
+    background-image: url("../../../img/provider/intro-index-1-bg.jpg")
 }
 
-.case-content .banner .img-text {
-    width: 54%;
-    position: relative;
-    cursor: pointer;
+.introduction .intro-index-2 {
+    height: 628px;
 }
 
-.case-content .banner .img-text img {
-    width: 100%;
+.introduction .intro-index-2 {
+    margin-top: 30px
 }
 
-.case-content .banner .img-text h3 {
-    color: #a1a1a1;
+.introduction .intro-index-2 .intro-index-2-text {
+    margin-top: 160px
+}
+
+.introduction .intro-index-2 .intro-index-2-text span {
+    display: block
+}
+
+.introduction .intro-index-2 .intro-index-2-text .title {
     font-size: 30px;
-    display: block;
-    position: absolute;
-    top: 30%;
-    right: 20%;
 }
 
-.case-content .banner .img-text.active {
-    position: absolute;
-    right: 0;
-    bottom: 0;
+.introduction .intro-index-2 .intro-index-2-text .e-title {
+    font-size: 44px;
+    color: rgb(92, 92, 92);
 }
 
-.case-content .banner .img-text h3 span {
-    padding-left: 50px;
-    display: inline-block;
+.introduction .intro-index-2 .intro-index-2-text .symbol {
+    color: rgb(102, 102, 102);
+    font-size: 40px;
 }
 
-.case-content .imgtext-flow {
-    max-width: 1200px;
-    margin: 50px auto;
-    padding-bottom: 20px;
+.introduction .intro-index-2 .intro-index-2-text .value {
+    color: rgb(137, 137, 137);
+    font-size: 16px
 }
 
-.case-content .imgtext-flow .item {
-    margin-bottom: 50px;
-    padding: 0px 10px;
+.introduction .intro-index-2 {
 }
 
-.case-content .imgtext-flow .item img {
+.introduction .intro-index-3 {
     width: 100%;
+    margin-left: 12%;
+    margin-top: 90px;
+    height: 335px;
+    color: #FFF;
+    background-image: url("../../../img/provider/intro-index-3-bg.jpg")
 }
 
-.case-content .imgtext-flow .item-text {
-    padding-left: 20px;
+.introduction .intro-index-3 .intro-index-count {
+    width: 200px;
+    width: 358px;
+    text-align: center;
+    margin-top: 81px;
 }
 
-.case-content .imgtext-flow .item h3 {
-    font-size: 24px;
-    color: #333;
-    padding: 30px 0 16px 0;
+.introduction .intro-index-3 span {
+    display: block
 }
 
-.case-content .imgtext-flow .item span {
+.introduction .intro-index-3 .count {
+    font-size: 48px;
+}
+
+.introduction .intro-index-3 .name {
+    font-size: 18px
+}
+
+.introduction .intro-index-4 .intro-index-4-first {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.introduction .intro-index-4 .theme {
+    font-size: 50px;
+    color: #000;
+}
+
+.introduction .intro-index-4 .symbol {
+    display: block;
+    margin-top: 10px;
+    color: #737373;
+    font-size: 18px
+}
+
+.introduction .intro-index-4 .intro-index-4-second {
+    margin-top: 40px
+}
+
+.introduction .intro-index-4 .intro-index-4-second .index-4-second-img {
+    text-align: right
+}
+
+.introduction .intro-index-4 .intro-index-4-desc div {
+    margin-left: 20px;
+}
+
+.introduction .intro-index-4 .intro-index-4-desc .number {
+    font-size: 50px;
+    color: #000;
+    margin: 5px;
+    font-weight: bold;
+}
+
+.introduction .intro-index-4 .intro-index-4-desc .name {
     font-size: 18px;
-    color: #666;
+    color: #000;
+    margin: 5px
 }
 
-.case-content .imgtext-flow .layui-flow-more {
+.introduction .intro-index-4 .intro-index-4-desc .desc {
+    display: block
+}
+
+.introduction .intro-index-4 .intro-index-4-desc .quming {
     position: absolute;
-    bottom: 0px;
-    left: 50%;
-    margin-left: -48px;
+    display: inline-block;
+    width: 380px
 }
 
-/*end-case*/
+.introduction .intro-index-4 .intro-index-4-desc .single-div {
+    margin-top: 40px
+}
 
+/*end-introduction*/
 
 @media only screen and (max-width: 1024px) {
     .case-content .banner {
@@ -741,10 +832,10 @@ body {
 }
 
 /*@media only screen and (max-width: 992px){
- 
+
 }*/
 /*@media only screen and (max-width: 810px){
-  
+
 
 }*/
 @media only screen and (max-width: 780px) {
@@ -759,7 +850,6 @@ body {
     .about-info .img-texts .item {
         padding: 0 20px;
     }
-
 
     .service-contact {
         margin-bottom: 50px;
@@ -946,4 +1036,3 @@ body {
     display: block;
 
 }
-

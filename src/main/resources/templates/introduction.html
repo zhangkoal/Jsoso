@@ -22,51 +22,74 @@
   <!-- header -->
   <div id="header"></div>
   <!-- end-header -->
-
-  <!-- case-content -->
-  <div class="case-content">
-    <div class="banner">
-        <div class="img-text">
-          <img src="../res/static/images/al_img1.jpg" alt="">
-          <h3>
-            今日推荐
-            <br><span>优秀案例</span>
-          </h3>
+  <div id="introduction" class="introduction">
+    <div class="nav"></div>
+    <div class="intro-index-2 layui-container">
+      <div class="layui-row layui-col-space30" >
+        <div class="intro-index-2-text layui-col-md6">
+          <span class="title">开创科技，完善未来</span>
+          <span class="e-title">CONTRACTED</span>
+          <span class="symbol">——</span>
+          <span class="value">与厂商、总代、客户无缝链接，免去中间环节直接采购；长期优选的供应商，不断优化的供应链管理，保证从价格、质量、
+            物流等方面的 综合优势，为客户提供具有性价比的产品和服务，降低客户的TOC（总拥有成 本）。</span>
         </div>
-        <div class="img-text active">
-          <img src="../res/static/images/al_img2.jpg" alt="">
-          <h3>
-            今日推荐
-            <br><span>优秀案例</span>
-          </h3>
-        </div>
-    </div>
-    <div class="imgtext-flow">
-      <div class="layui-fluid pb50">
-        <div class="layui-row item-list-box layui-clear" id="item-list-box" style="margin:0">
+        <div class="intro-index-2-img layui-col-md6">
+          <img src="../img/provider/intro-index-2-bg.jpg">
         </div>
       </div>
-    </div>  
-  </div>
-  <!-- end case-content -->
-  <!-- 模版引擎导入 -->
- 
-  <script id="zonesTpl" type="text/html">
-  
-    <div class="layui-col-xs12 layui-col-sm6 layui-col-md6">
-      <div class="item">
-          <img src="<% d.images %>" alt="">
-          <div class="item-text">
-            <h3><% d.text %></h3>
-            <span>2016/10/13</span>
+    </div>
+    <div class="intro-index-3 layui-container">
+      <div class="layui-row layui-col-space30" >
+        <div class="layui-col-md3 intro-index-count"><span class="count">XX</span><span class="name">员工</span></div>
+        <div class="layui-col-md3 intro-index-count"><span class="count">XX</span><span class="name">解决方案</span></div>
+        <div class="layui-col-md3 intro-index-count"><span class="count">XX</span><span class="name">优秀客户</span></div>
+        <div class="layui-col-md3 intro-index-count"><span class="count">XX</span><span class="name">服务案例</span></div>
+      </div>
+    </div>
+    <div class="intro-index-4">
+      <div class="intro-index-4-first">
+        <span class="theme">我们的优势</span>
+        <span class="symbol">——</span>
+      </div>
+      <div class="layui-row layui-col-space30 intro-index-4-second" >
+        <div class="layui-col-md6 index-4-second-img">
+          <img src="../img/provider/intro-index-4-left.jpg">
+        </div>
+        <div class="intro-index-4-desc layui-col-md6">
+          <div>
+          <span class="number" >01</span>
+          <img src="../img/provider/intro-index-4-vertical.jpg"></img>
+            <div  class="quming">
+              <span class="name">专业</span>
+              <span class="desc">连续多年程序开发项目经验积累，目前公司已有完整的研发测试团队，让您更放心选择我们！</span>
+            </div>
+        </div>
+          <div class="single-div">
+            <span class="number" >02</span>
+            <img src="../img/provider/intro-index-4-vertical.jpg"></img>
+            <div  class="quming">
+              <span class="name">安全</span>
+              <span class="desc">连续多年程序开发项目经验积累，目前公司已有完整的研发测试团队，让您更放心选择我们！</span>
+            </div>
           </div>
+          <div class="single-div">
+            <span class="number" >03</span>
+            <img src="../img/provider/intro-index-4-vertical.jpg"></img>
+            <div class="quming">
+              <span class="name">可靠</span>
+              <span class="desc">连续多年程序开发项目经验积累，目前公司已有完整的研发测试团队，让您更放心选择我们！</span>
+            </div>
+          </div>
+        </div>
       </div>
+
     </div>
- 
-  </script>
-
-  
-
+  </div>
+  <div class="service-case-more">
+    <a >
+      <span>更多</span>
+    </a>
+  </div>
   <!-- footer -->
   <div id="footer"></div>
 
@@ -77,51 +100,6 @@ layui.config({
   var common = layui.common,flow = layui.flow,laytpl = layui.laytpl,element = layui.element,$ = layui.$;
     $("#footer").load("footer");
     $("#header").load("header");
-
-
-    // 模版引擎导入
-  var data = {"code":0,"msg":"比喻","last_page":2,"list_page":1000,"data":[{"text":"你好","images":"../res/static/images/al_img3.jpg"},{"text":"你好","images":"../res/static/images/al_img4.jpg"},{"text":"你好","images":"../res/static/images/al_img5.jpg"},{"text":"你好","images":"../res/static/images/al_img6.jpg"}]}
-  laytpl.config({
-    open: '<%',
-    close: '%>'
-  });
-
-    flow.load({
-      elem: '#item-list-box'
-      ,isAuto :  false
-      ,isLazyimg: true
-      ,mb:100
-      ,done: function(page,next){
-        var lis = [];
-         var getTpl = zonesTpl.innerHTML;
-          var img = new Image();
-          layui.each(data.data,function(index,item){  
-            laytpl(getTpl).render(item,function(html){
-                lis.push(html); 
-            });
-          });
-          // common.waterfall(); 
-          if(page < data.data.last_page){
-            next(lis.join(''),true);
-          }else{
-            next(lis.join(''),false);
-          }
-          element.init()
-      }
-    })
-  // window.onload = function(){
-  //   common.waterfall(); 
-  // }
-  $('.app-header-menuicon').on('click',function(){
-    $('.header-down-nav').toggleClass('down-nav')
-  })
-  $('.case-content .banner .img-text').on('click',function(){
-    if($(this).hasClass('active')){
-      $(this).removeClass('active').siblings('.img-text').addClass('active')
-    }else{
-      $(this).addClass('active').siblings('.img-text').removeClass('active')
-    }
-  })
 });
 </script>
 </body>
