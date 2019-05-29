@@ -7,6 +7,7 @@ import org.apache.shiro.mgt.DefaultSecurityManager;
 import org.apache.shiro.realm.SimpleAccountRealm;
 import org.apache.shiro.subject.Subject;
 import org.junit.Before;
+import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -26,7 +27,7 @@ import java.util.List;
 @SpringBootTest
 public class RoleRepositoryTest {
 
-    SimpleAccountRealm simpleAccountRealm =new SimpleAccountRealm();
+    SimpleAccountRealm simpleAccountRealm = new SimpleAccountRealm();
 
     @Autowired
     private IRoleService roleService;
@@ -37,6 +38,7 @@ public class RoleRepositoryTest {
         simpleAccountRealm.addAccount("name","123456","admin");
     }
 
+    @Test
     public void testSql() {
         List<String> roleList = roleService.getRolesByUserName("add");
         for(String roleCode : roleList) {
@@ -44,6 +46,7 @@ public class RoleRepositoryTest {
         }
     }
 
+    @Test
     public void testShiroAccount() {
         DefaultSecurityManager defaultSecurityManager =new DefaultSecurityManager();//创建一个默认的安全管理器
         defaultSecurityManager.setRealm(simpleAccountRealm); //将账户域添加到安全管理器中
