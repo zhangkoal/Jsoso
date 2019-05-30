@@ -72,6 +72,11 @@ body {
     color: #ab8e75 !important;
 }
 
+.header .nav a:hover {
+    color: #ab8e75 !important;
+    border-bottom: 2px solid #ab8e75;
+}
+
 .app-header {
     display: none;
 }
