@@ -1,5 +1,5 @@
 <div class="header_box">
-    <div class="header layui-container">
+    <div class="header">
         <ul class="app-header">
             <li class="app-header-menuicon">
                 <i class="layui-icon layui-icon-more-vertical"></i>
@@ -12,8 +12,14 @@
             </a>
         </h1>
 
-        <ul class="layui-nav">
-            <li class="layui-nav-item"><a href="index">首页</a></li>
+        <div class="nav" style="visibility: visible">
+            <a href="index" class="active">首页</a>
+            <a href="introduction">品牌介绍</a>
+            <a href="service">我们的服务</a>
+            <a href="contact">联系我们</a>
+        </div>
+        <ul class="layui-nav header-down-nav">
+            <li class="layui-nav-item"><a href="index" class="active">首页</a></li>
             <li class="layui-nav-item"><a href="introduction">品牌介绍</a></li>
             <li class="layui-nav-item"><a href="service">我们的服务</a></li>
             <li class="layui-nav-item"><a href="contact">联系我们</a></li>
