@@ -72,11 +72,6 @@ body {
     color: #ab8e75 !important;
 }
 
-.header .nav a:hover {
-    color: #ab8e75 !important;
-    border-bottom: #ab8e75 solid 2px;
-}
-
 .app-header {
     display: none;
 }
@@ -1030,4 +1025,19 @@ body {
     font-size: 16px;
     margin-top: 40px;
     display: block;
+}
+
+.layui-nav {
+    background-color: white;
+    display: inline-block;
+    float:right;
+}
+
+.layui-nav .layui-nav-item a {
+    color: black;
+}
+
+.layui-nav .layui-nav-item a:hover {
+    color: #ab8e75 !important;
+    border-bottom: #ab8e75 solid 2px;
 }
