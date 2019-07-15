@@ -6,8 +6,8 @@ CREATE TABLE `tb_user` (
   `password` varchar(20) DEFAULT NULL,
   `phone` varchar(11) DEFAULT NULL,
   `email` varchar(30) DEFAULT NULL,
-  `creatDate` TIMESTAMP(6),
-  `updateDate` TIMESTAMP(6),
+  `creatDate` datetime,
+  `updateDate` datetime,
   `status` int,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -57,10 +57,10 @@ CREATE TABLE `tb_user_role` (
 CREATE VIEW v_user_role AS
     SELECT
         user.id,
-				user.username,
-			  role.rolecode
+		user.username,
+		role.rolecode
     FROM tb_user_role link
-		LEFT JOIN tb_user user on user.id = link.userid and user.status = 10
+		LEFT JOIN 'tb_user' user on user.id = link.userid and user.status = 10
 		LEFT JOIN tb_role role on role.id = link.roleid and role.status = 10;
 
 

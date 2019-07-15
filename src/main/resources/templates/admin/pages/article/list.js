@@ -35,11 +35,11 @@ layui.use(['table', 'jquery','form', 'admin'], function() {
 			}]
 		],
 		data: [{
-			"id": "1",
+			"id": "templates.product.case.1",
 			"title": "WeAdmin的第一个版本在不断地抽空完善学习中",
 			"date": "2018-02-03",
 			"category": "官方动态",
-			"sort": "1",
+			"sort": "templates.product.case.1",
 			"recommend": "checked",
 			"top": "checked"
 		}, {
@@ -47,7 +47,7 @@ layui.use(['table', 'jquery','form', 'admin'], function() {
 			"title": "WeAdmin的测试数据一二三四五六七",
 			"date": "2018-02-03",
 			"category": "新闻资讯",
-			"sort": "1",
+			"sort": "templates.product.case.1",
 			"recommend": "",
 			"top": "checked"
 		}],

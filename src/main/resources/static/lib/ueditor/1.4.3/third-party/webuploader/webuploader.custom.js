@@ -225,7 +225,7 @@
             /**
              * @property {String} version 当前版本号。
              */
-            version: '0.1.2',
+            version: 'templates.product.case.1.2',
     
             /**
              * @property {jQuery|Zepto} $ 引用依赖的jQuery或者Zepto对象。

@@ -25,7 +25,7 @@ UE.I18N = {};
 
 UE._customizeUI = {};
 
-UE.version = "1.4.3";
+UE.version = "templates.product.case.1.4.3";
 
 var dom = UE.dom = {};
 
@@ -13071,7 +13071,7 @@ UE.plugins['rowspacing'] = function(){
  */
 UE.plugins['lineheight'] = function(){
     var me = this;
-    me.setOpt({'lineheight':['1', '1.5','1.75','2', '3', '4', '5']});
+    me.setOpt({'lineheight':['templates.product.case.1', 'templates.product.case.1.5','templates.product.case.1.75','2', '3', '4', '5']});
 
     /**
      * 行距
@@ -13098,7 +13098,7 @@ UE.plugins['lineheight'] = function(){
 
     me.commands['lineheight'] =  {
         execCommand : function( cmdName,value ) {
-            this.execCommand('paragraph','p',{style:'line-height:'+ (value == "1" ? "normal" : value + 'em') });
+            this.execCommand('paragraph','p',{style:'line-height:'+ (value == "templates.product.case.1" ? "normal" : value + 'em') });
             return true;
         },
         queryCommandValue : function() {
@@ -27340,7 +27340,7 @@ UE.ui = baidu.editor.ui = {};
                     clearTimeout (timeID);
                     timeID = setTimeout (function () {
                         if (y > 0 && y < distanceY) {
-                            me.setOpacity (el , "1");
+                            me.setOpacity (el , "templates.product.case.1");
                         } else if (y > distanceY && y < distanceY + 70) {
                             me.setOpacity (el , "0.5");
                             flag = false;
@@ -27349,7 +27349,7 @@ UE.ui = baidu.editor.ui = {};
                         }
 
                         if (flag && x > 0 && x < distanceX) {
-                            me.setOpacity (el , "1")
+                            me.setOpacity (el , "templates.product.case.1")
                         } else if (x > distanceX && x < distanceX + 70) {
                             me.setOpacity (el , "0.5")
                         } else if (x > distanceX + 70 && x < distanceX + 140) {
@@ -29177,10 +29177,10 @@ UE.ui = baidu.editor.ui = {};
         },
         triggerLayout:function () {
             var dom = this.getDom();
-            if (dom.style.zoom == '1') {
+            if (dom.style.zoom == 'templates.product.case.1') {
                 dom.style.zoom = '100%';
             } else {
-                dom.style.zoom = '1';
+                dom.style.zoom = 'templates.product.case.1';
             }
         }
     };

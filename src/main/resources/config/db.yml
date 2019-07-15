@@ -1,0 +1,44 @@
+---
+spring:
+  profiles: test
+  h2:
+    console:
+      enabled: true
+  datasource:
+    initialization-mode: always
+    platform: h2
+    driverClassName: org.h2.Driver
+    url: jdbc:h2:mem:testdb
+    username: root
+    password: 123456
+    scheme: classpath:sql/jsoso.sql
+    data: classpath:sql/jsoso.sql
+    sql-script-encoding: utf-8     #需设置
+  jpa:
+    database: h2
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+---
+spring:
+  profiles: dev
+  datasource:
+    connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
+    minIdle: 5
+    validationQuery: SELECT 1 FROM DUAL
+    initialSize: 5
+    maxWait: 60000
+    filters: stat,wall
+    poolPreparedStatements: true
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://127.0.0.1:3306/jsoso?useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC&&useSSL=true
+    maxPoolPreparedStatementPerConnectionSize: 20
+    password: 123456
+    testOnBorrow: false
+    testWhileIdle: true
+    minEvictableIdleTimeMillis: 300000
+    timeBetweenEvictionRunsMillis: 60000
+    testOnReturn: false
+    driverClassName: com.mysql.jdbc.Driver
+    maxActive: 20
+    username: root

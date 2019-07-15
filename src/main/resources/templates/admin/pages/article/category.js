@@ -81,7 +81,7 @@ layui.use(['treeGird', 'jquery', 'admin', 'layer'], function() {
 		elem: '#demo', //传入元素选择器
 		spreadable: true, //设置是否全展开，默认不展开
 		nodes: [{
-				"id": "1",
+				"id": "templates.product.case.1",
 				"name": "父节点1",
 				"children": [{
 						"id": "11",

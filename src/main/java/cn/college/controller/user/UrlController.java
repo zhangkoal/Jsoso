@@ -41,6 +41,45 @@ public class UrlController {
         return "login";
     }
 
+    @RequestMapping(value = "product",method = RequestMethod.GET)
+    public String product(HttpServletRequest request) {
+        return "product";
+    }
+
+    @RequestMapping(value = "product/list-11-1",method = RequestMethod.GET)
+    public String product_11_1(HttpServletRequest request) {
+        return "product/list-11-1";
+    }
+
+    @RequestMapping(value = "product/list-12-1",method = RequestMethod.GET)
+    public String product_12_1(HttpServletRequest request) {
+        return "product/list-12-1";
+    }
+
+    @RequestMapping(value = "product/list-13-1",method = RequestMethod.GET)
+    public String product_13_1(HttpServletRequest request) {
+        return "product/list-13-1";
+    }
+
+    @RequestMapping(value = "product/list-14-1",method = RequestMethod.GET)
+    public String product_14_1(HttpServletRequest request) {
+        return "product/list-14-1";
+    }
+
+    //案例
+    @RequestMapping(value = "case/1",method = RequestMethod.GET)
+    public String case_1(HttpServletRequest request) {
+        return "product/case/1";
+    }
+
+    @RequestMapping(value = "case/2",method = RequestMethod.GET)
+    public String case_2(HttpServletRequest request) {
+        return "product/case/2";
+    }
+
+
+
+
     /**
      * 退出
      * @return

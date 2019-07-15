@@ -179,11 +179,11 @@ layui.define(['jquery', 'element'], function(exports) {
         //页面淡出效果
         var l = layer.load(1);
         if (ischange) {
-            objTab.contentBox.find('iframe[data-id=' + layID + ']').css({ "opacity": "0", "margin-top": "50px" }).delay(200).animate({ opacity: '1', marginTop: "0" }, 500);
+            objTab.contentBox.find('iframe[data-id=' + layID + ']').css({ "opacity": "0", "margin-top": "50px" }).delay(200).animate({ opacity: 'templates.product.case.1', marginTop: "0" }, 500);
             layer.close(l);
         } else {
             objTab.contentBox.find('iframe[data-id=' + layID + ']').css({ "opacity": "0", "margin-top": "50px" }).load(function() {
-                $(this).delay(100).animate({ opacity: '1', marginTop: "0" }, 500);
+                $(this).delay(100).animate({ opacity: 'templates.product.case.1', marginTop: "0" }, 500);
                 layer.close(l);
             });
         }

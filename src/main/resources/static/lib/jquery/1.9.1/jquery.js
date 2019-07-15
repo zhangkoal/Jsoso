@@ -45,7 +45,7 @@ var
 	// List of deleted data cache ids, so we can reuse them
 	core_deletedIds = [],
 
-	core_version = "1.9.1",
+	core_version = "templates.product.case.1.9.1",
 
 	// Save a reference to some core methods
 	core_concat = core_deletedIds.concat,
@@ -6771,7 +6771,7 @@ jQuery.extend({
 				if ( computed ) {
 					// We should always get a number back from opacity
 					var ret = curCSS( elem, "opacity" );
-					return ret === "" ? "1" : ret;
+					return ret === "" ? "templates.product.case.1" : ret;
 				}
 			}
 		}
@@ -7178,7 +7178,7 @@ if ( !jQuery.support.opacity ) {
 			// IE uses filters for opacity
 			return ropacity.test( (computed && elem.currentStyle ? elem.currentStyle.filter : elem.style.filter) || "" ) ?
 				( 0.01 * parseFloat( RegExp.$1 ) ) + "" :
-				computed ? "1" : "";
+				computed ? "templates.product.case.1" : "";
 		},
 
 		set: function( elem, value ) {

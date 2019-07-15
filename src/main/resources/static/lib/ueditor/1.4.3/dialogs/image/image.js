@@ -1054,7 +1054,7 @@
             var _this = this,
                 key = $G('searchTxt').value,
                 type = $G('searchType').value,
-                keepOriginName = editor.options.keepOriginName ? "1" : "0",
+                keepOriginName = editor.options.keepOriginName ? "templates.product.case.1" : "0",
                 url = "http://image.baidu.com/i?ct=201326592&cl=2&lm=-1&st=-1&tn=baiduimagejson&istype=2&rn=32&fm=index&pv=&word=" + _this.encodeToGb2312(key) + type + "&keeporiginname=" + keepOriginName + "&" + +new Date;
 
             $G('searchListUl').innerHTML = lang.searchLoading;

@@ -4,10 +4,9 @@ import com.alibaba.druid.pool.DruidDataSource;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Primary;
-import org.springframework.context.annotation.PropertySource;
+import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
+import org.springframework.context.annotation.*;
 
 import javax.sql.DataSource;
 import java.sql.SQLException;
@@ -20,7 +19,6 @@ import java.sql.SQLException;
  * @Version 1.0
  */
 @Configuration
-@PropertySource("classpath:properties/db.properties")
 public class DruidConfiguration {
     private Logger logger = LoggerFactory.getLogger(DruidConfiguration.class);
 

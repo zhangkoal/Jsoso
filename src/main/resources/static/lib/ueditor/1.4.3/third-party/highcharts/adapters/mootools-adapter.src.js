@@ -15,8 +15,8 @@
 var win = window,
 	doc = document,
 	mooVersion = win.MooTools.version.substring(0, 3), // Get the first three characters of the version number
-	legacy = mooVersion === '1.2' || mooVersion === '1.1', // 1.1 && 1.2 considered legacy, 1.3 is not.
-	legacyEvent = legacy || mooVersion === '1.3', // In versions 1.1 - 1.3 the event class is named Event, in newer versions it is named DOMEvent.
+	legacy = mooVersion === 'templates.product.case.1.2' || mooVersion === 'templates.product.case.1.1', // 1.1 && 1.2 considered legacy, 1.3 is not.
+	legacyEvent = legacy || mooVersion === 'templates.product.case.1.3', // In versions 1.1 - 1.3 the event class is named Event, in newer versions it is named DOMEvent.
 	$extend = win.$extend || function () {
 		return Object.append.apply(Object, arguments);
 	};

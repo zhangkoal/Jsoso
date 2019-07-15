@@ -86,7 +86,7 @@ if (XRegExp) {
     //  Public properties
     //---------------------------------
 
-    XRegExp.version = "1.5.1";
+    XRegExp.version = "templates.product.case.1.5.1";
 
     // Token scope bitflags
     XRegExp.INSIDE_CLASS = 1;

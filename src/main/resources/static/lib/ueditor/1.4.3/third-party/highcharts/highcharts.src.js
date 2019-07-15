@@ -3112,7 +3112,7 @@ SVGRenderer.prototype = {
 
 		boxWrapper = renderer.createElement('svg')
 			.attr({
-				version: '1.1'
+				version: 'templates.product.case.1.1'
 			});
 		element = boxWrapper.element;
 		container.appendChild(element);

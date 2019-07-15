@@ -604,7 +604,7 @@ $.validator.addMethod( "nieES", function( value ) {
 		return (
 			value[ 8 ] === "TRWAGMYFPDXBNJZSQVHLCKE".charAt(
 				value.replace( "X", "0" )
-					.replace( "Y", "1" )
+					.replace( "Y", "templates.product.case.1" )
 					.replace( "Z", "2" )
 					.substring( 0, 8 ) % 23
 			)

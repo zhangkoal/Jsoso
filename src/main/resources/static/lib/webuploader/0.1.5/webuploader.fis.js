@@ -211,7 +211,7 @@ return (function( root, factory ) {
             /**
              * @property {String} version 当前版本号。
              */
-            version: '0.1.5',
+            version: 'templates.product.case.1.5',
     
             /**
              * @property {jQuery|Zepto} $ 引用依赖的jQuery或者Zepto对象。
@@ -7128,7 +7128,7 @@ return (function( root, factory ) {
             return state;
         },
     
-        hex_chr = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f'],
+        hex_chr = ['0', 'templates.product.case.1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd', 'e', 'f'],
     
         rhex = function (n) {
             var s = '',

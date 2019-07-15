@@ -804,7 +804,7 @@ UE.parse.register('charts',function( utils ){
             meta = config.meta;
 
         //数据对齐方式为相反的方式， 需要反转数据
-        if ( meta.dataFormat != "1" ) {
+        if ( meta.dataFormat != "templates.product.case.1" ) {
 
             for ( var i = 0, len = data.length; i < len ; i++ ) {
 

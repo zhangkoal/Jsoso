@@ -97,7 +97,7 @@
             _default.className = 'select-default unselectable'
             _default.unselectable = 'on'
             //让div元素能够获取焦点
-            _default.setAttribute('tabindex', '1')
+            _default.setAttribute('tabindex', 'templates.product.case.1')
             _default.setAttribute('data-value', selectedValue)
             _default.setAttribute('hidefocus', true)
             _default.innerHTML = selectedText 

@@ -820,7 +820,7 @@
                     if (!defaultStyles[node.nodeName]) {
                         if (!dummySVG) {
                             dummySVG = doc.createElementNS(H.SVG_NS, 'svg');
-                            dummySVG.setAttribute('version', '1.1');
+                            dummySVG.setAttribute('version', 'templates.product.case.1.1');
                             doc.body.appendChild(dummySVG);
                         }
                         dummy = doc.createElementNS(node.namespaceURI, node.nodeName);

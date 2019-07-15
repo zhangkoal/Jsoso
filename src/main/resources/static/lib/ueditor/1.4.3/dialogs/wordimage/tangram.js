@@ -22,7 +22,7 @@
  * @author: allstar, erik, meizz, berg
  */
 var T,
-    baidu = T = baidu || {version: "1.5.0"};
+    baidu = T = baidu || {version: "templates.product.case.1.5.0"};
 baidu.guid = "$BAIDU$";
 baidu.$$ = window[baidu.guid] = window[baidu.guid] || {global:{}};
 
